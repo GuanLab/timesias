@@ -5,9 +5,9 @@
 
 ## dependency
 
-* [python (3.6.5)](https://www.python.org/)
-* [numpy (1.13.3)](https://numpy.org/)
-* [pandas](https://pandas.pydata.org/)
+* [python (3.7.4)](https://www.python.org/)
+* [numpy (1.17.2)](https://numpy.org/)
+* [pandas(0.25.1)](https://pandas.pydata.org/)
 * [LightGBM(3.1.1)](https://pypi.org/project/lightgbm/)
 * [scikit-learn (0.19.0)](https://scikit-learn.org/stable/) 
 
