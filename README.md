@@ -1,9 +1,19 @@
 # sepsis
-##Top-performing algorithm for DII National Data Science Challenge
+## Top-performing algorithm for DII National Data Science Challenge
 
-The example data in the data/ are randomly generated data for the demonstration of the algorithm
+## Installation
+
+## dependency
+
+* [@python (3.6.5)](https://www.python.org/)
+* [@numpy (1.13.3)](https://numpy.org/)
+* [@pandas](https://pandas.pydata.org/)
+* [@LightGBM(3.1.1)](https://pypi.org/project/lightgbm/)
+* [@scikit-learn (0.19.0)](https://scikit-learn.org/stable/) 
 
 ## Input data format
+
+The example data in the data/ are randomly generated data for the demonstration of the algorithm.
 
 Two types of data is requied for model training and prediction:
 `gs.file`: `.txt` file two columns. The first column if file name index. The second column is the gold standard (0/1), representing the final outbreak of sepsis
@@ -31,8 +41,7 @@ HR feature_1 featuyre_2 ... feature_n-1 feature_n
 ``` r
 python main.py -g [PATH]
 ```
-
-## dependency
+This will generate models, which will be saved under a new directory `./models`
 
 
 
