@@ -28,7 +28,7 @@ Two types of data is requied for model training and prediction:
 6.psv,1
 ``` 
 
-`*.psv`: `.psv` table file separated by '|', which is the time-series feature records.
+`*.psv`: `.psv` table files separated by `|`, which is the time-series feature records.
 	The header of psv file are the feature names. To note, the first column is the time index.
 
 ``` r
