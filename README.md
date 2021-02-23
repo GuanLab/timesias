@@ -1,9 +1,9 @@
-# sepsis
+# Sepsis
 ## Top-performing algorithm for DII National Data Science Challenge
 
 ## Installation
 
-## dependency
+## Dependency
 
 * [python (3.7.4)](https://www.python.org/)
 * [numpy (1.17.2)](https://numpy.org/)
@@ -16,7 +16,7 @@
 The example data in the data/ are randomly generated data for the demonstration of the algorithm.
 
 Two types of data is requied for model training and prediction:
-`gs.file`: `.txt` file two columns. The first column if file name index. The second column is the gold standard (0/1), representing the final outbreak of sepsis
+* `gs.file`: `.txt` file two columns. The first column if file name index. The second column is the gold standard (0/1), representing the final outbreak of sepsis
 
 ``` r
 0.psv,1
@@ -28,7 +28,7 @@ Two types of data is requied for model training and prediction:
 6.psv,1
 ``` 
 
-`*.psv`: `.psv` table files separated by `|`, which is the time-series feature records.
+* `*.psv`: `.psv` table files separated by `|`, which is the time-series feature records.
 	The header of psv file are the feature names. To note, the first column is the time index.
 
 ``` r
@@ -37,15 +37,16 @@ HR feature_1 featuyre_2 ... feature_n-1 feature_n
 1.0 NaN 0.0 ... 0.0 0.0
 3.5 NaN 2.3 ... 0.0 0.0
 ```
-## model training and cross validation
+## Model training and cross validation
 ``` r
 python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES]
 ```
 * `[GS_FILE_PATH]`: the path to gold-standards and file path file;
 * `LAST_N_RECORDS`: last n records used for prediction. defulat: 16;
-* `EXTRA_FEATURES`: addtional features used for prediction
+* `EXTRA_FEATURES`: addtional features used for prediction. defualt: all features we used in DII Data challenge.
 
 This will generate models, which will be saved under a new directory `./models`
 
-
-
+## Reference
+For citation, please refer to our latest iScience paper: [Assessment of the timeliness and robustness for predicting adult sepsis](https://www.sciencedirect.com/science/article/pii/S2589004221000742)
+For protocol(TBD)
