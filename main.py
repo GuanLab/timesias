@@ -5,12 +5,19 @@ def main():
     parser = argparse.ArgumentParser(description = 'Predict outcome from time-series data',
             usage = 'use "python %(prog)s --help" for more information',
             formatter_class=argparse.RawTextHelpFormatter)
-    parser.add_argument('-g','--gs_file_path', type=  str,
+    parser.add_argument('-g','--gs_file_path', type=str,
             help = 'path to gold-standards and file path file')
 
     parser.add_argument('-t','--last_n_records', type=int,
-            help = 'Use last n records. defulat: 8',
-            default =  8)
+            help = 'Use last n records. defulat: 16',
+            default =  16)
+
+    parser.add_argument('-f','--extra_features', type=str,
+            default = ['norm', 'std', 'missing_portion', 'baseline'],
+            help = '''
+            which extra features to use.
+            default: ['norm', 'std', 'missing_portion', 'baseline']
+            ''')
 
     args = parser.parse_args()
     
@@ -19,8 +26,8 @@ def main():
     run(**opts)
 
 
-def run(gs_file_path, last_n_records):
-    five_fold_cv(gs_file_path, last_n_records)
+def run(gs_file_path, last_n_records, extra_features):
+    five_fold_cv(gs_file_path, last_n_records, extra_features)
 
 
 if __name__ == '__main__':

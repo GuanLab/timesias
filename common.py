@@ -11,37 +11,40 @@ from utils import *
 import shap
 
 
-def load_data(all_fpath, n):
+def load_data(all_fpath, n, f):
     """
     params
         all_fpath: a list of path of all sample files
         n: int
             last n records used for prediction
+        f: list
+            extra features
 
     yields
         all_matrix: Numpy array
             all feature matrix of all files in all_fpath
+        fnames: list
+            featrue names
     """
     all_matrix =[]
     for fpath in all_fpath:
         new_fpath = './data/'+fpath
         assert os.path.exists(new_fpath), "File '"+new_fpath+"' not exist!" 
         d=pd.read_csv(new_fpath, sep = '|', header = 0)
-        m = construct_feature_matrix(np.array(d), 2*n)
-        m = np.reshape(m, (1, m.shape[0])) 
+        m, fnames = construct_feature_matrix(d, n, f)
         all_matrix.append(m)
     all_matrix=np.concatenate(all_matrix, axis = 0)
-    return all_matrix
+    return all_matrix, fnames
 
 def evaluation(gs,pred):
     """
     params
-    gs
-    pred
+        gs
+        pred
     
     yields
-    the_auc
-    the_auprc
+        the_auc
+        the_auprc
     """
     #auc
     fpr, tpr, thresholds = metrics.roc_curve(gs, pred, pos_label=1)
@@ -52,11 +55,12 @@ def evaluation(gs,pred):
 
     return the_auc, the_auprc
 
-def five_fold_cv(gs_filepath, n):
+def five_fold_cv(gs_filepath, n, f):
     """
     params
         gs_filepath
         n
+        f
     yields
         
     """
@@ -72,7 +76,8 @@ def five_fold_cv(gs_filepath, n):
     for i,(train_idx, test_idx) in enumerate(kf.split(f_path)):
 
         # load train
-        train_matrix = load_data([f_path[j] for j in train_idx])
+        train_f = [f_path[j] for j in train_idx]
+        train_matrix, _ = load_data(train_f, n, f)
         train_gs = [f_gs[j] for j in train_idx]
         # train model
         gbm = lightgbm_train(train_matrix, train_gs)
@@ -83,7 +88,8 @@ def five_fold_cv(gs_filepath, n):
         pickle.dump(gbm, open(filename, 'wb'))
         
         # load test
-        test_matrix = load_data([f_path[j] for j in test_idx])
+        test_f = [f_path[j] for j in test_idx]
+        test_matrix, = load_data(test_f, n, f)
         test_gs = [f_gs[j] for j in test_idx]
         
         test_pred =gbm.predict(test_matrix)
@@ -97,12 +103,15 @@ def five_fold_cv(gs_filepath, n):
 
 def specific_evaluation(test_idx):
     """
+        gs_filepath, n, f
     """
     f_models = glob('./models/finalized_model.sav.*')
     for f in f_models:
         gbm = pickle.load(open(f, 'rb'))
         # load test
-        test_matrix = load_data([f_path[j] for j in test_idx])
+        test_f = [f_path[j] for j in test_idx]
+
+        test_matrix, f_names = load_data(test_f, n, f)
         test_gs = [f_gs[j] for j in test_idx]
     
         test_pred =gbm.predict(test_matrix)
