@@ -89,7 +89,7 @@ def five_fold_cv(gs_filepath, n, f):
         
         # load test
         test_f = [f_path[j] for j in test_idx]
-        test_matrix, = load_data(test_f, n, f)
+        test_matrix,f_names = load_data(test_f, n, f)
         test_gs = [f_gs[j] for j in test_idx]
         
         test_pred =gbm.predict(test_matrix)

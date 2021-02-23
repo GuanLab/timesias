@@ -145,11 +145,11 @@ def construct_feature_matrix(data, t, f):
         new_t +=2
 
     i=data.shape[0]-1 # total number of time points
-    print(data.shape)
+    #print(data.shape)
     m = []
     f = []
     while(i<data.shape[0]):  # there is no loop! just the last timepoint
-        print(i)
+        #print(i)
         new_m  = last_i(data, i, t)
         m.append(new_m)
         new_f = [fn+'_'+str(a)+'_ori' for a in range(t)for fn in f_names]
