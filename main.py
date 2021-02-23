@@ -8,6 +8,10 @@ def main():
     parser.add_argument('-g','--gs_file_path', type=  str,
             help = 'path to gold-standards and file path file')
 
+    parser.add_argument('-t','--last_n_records', type=int,
+            help = 'Use last n records. defulat: 8',
+            default =  8)
+
     args = parser.parse_args()
     
     
@@ -15,13 +19,8 @@ def main():
     run(**opts)
 
 
-
-def run(gs_file_path):
-    five_fold_cv(gs_file_path)
-
-    # age-specific evaluation
-    #the_list=['<20','20~30','30~40','40~50','50~60','60~70','70~80','=80']
-
+def run(gs_file_path, last_n_records):
+    five_fold_cv(gs_file_path, last_n_records)
 
 
 if __name__ == '__main__':

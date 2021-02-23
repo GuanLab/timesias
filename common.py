@@ -8,23 +8,26 @@ import sklearn.metrics as metrics
 from model import lightgbm_train
 from glob import glob
 from utils import *
-#import shap
+import shap
 
 
-def load_data(all_fpath):
+def load_data(all_fpath, n):
     """
     params
-    fpath
+        all_fpath: a list of path of all sample files
+        n: int
+            last n records used for prediction
 
     yields
-    all_matrix: all feature matrix
+        all_matrix: Numpy array
+            all feature matrix of all files in all_fpath
     """
     all_matrix =[]
     for fpath in all_fpath:
         new_fpath = './data/'+fpath
         assert os.path.exists(new_fpath), "File '"+new_fpath+"' not exist!" 
         d=pd.read_csv(new_fpath, sep = '|', header = 0)
-        m = construct_feature_matrix(annote_missing_features(np.array(d)))
+        m = construct_feature_matrix(np.array(d), 2*n)
         m = np.reshape(m, (1, m.shape[0])) 
         all_matrix.append(m)
     all_matrix=np.concatenate(all_matrix, axis = 0)
@@ -49,8 +52,13 @@ def evaluation(gs,pred):
 
     return the_auc, the_auprc
 
-def five_fold_cv(gs_filepath):
+def five_fold_cv(gs_filepath, n):
     """
+    params
+        gs_filepath
+        n
+    yields
+        
     """
 
     #gs_filepath = './data/gs.file'
@@ -69,10 +77,9 @@ def five_fold_cv(gs_filepath):
         # train model
         gbm = lightgbm_train(train_matrix, train_gs)
         
-        print('Saving model...') # save model to file
-        
         os.makedirs('./models', exist_ok = True)
         filename = './models/finalized_model.sav.'+str(i)
+        print('Saving model to '+ filename+ '...') # save model to file
         pickle.dump(gbm, open(filename, 'wb'))
         
         # load test
@@ -87,6 +94,7 @@ def five_fold_cv(gs_filepath):
         print(the_auc, the_auprc)
         out_eva.write("%d\t%.4f\t%.4f\n" %(i, the_auc, the_auprc))
     out_eva.close()
+
 def specific_evaluation(test_idx):
     """
     """
@@ -103,6 +111,19 @@ def specific_evaluation(test_idx):
         the_auc, the_auprc = evaluation(test_gs, test_pred)
 
         print(the_auc, the_auprc)
+
+def shap_analysis(regressor, Test_X, f_names):
+    """ SHAP analysis on a sspecific dataset
+    params
+        regressor
+        df
+    yields
+
+    """
+    shap_values = shap.TreeExplainer(regressor).shap_values(Test_X)
+
+
+    pass
 
 
 
