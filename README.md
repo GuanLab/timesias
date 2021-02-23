@@ -48,5 +48,5 @@ python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES]
 This will generate models, which will be saved under a new directory `./models`
 
 ## Reference
-For citation, please refer to our latest iScience paper: [Assessment of the timeliness and robustness for predicting adult sepsis](https://www.sciencedirect.com/science/article/pii/S2589004221000742)
-For protocol(TBD)
+* For citation, please refer to our latest iScience paper: [Assessment of the timeliness and robustness for predicting adult sepsis](https://www.sciencedirect.com/science/article/pii/S2589004221000742).
+* For protocol(TBD)
