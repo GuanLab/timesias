@@ -14,22 +14,23 @@ def construct_feature_matrix(data, t, f):
             e.g. ['norm', 'std', 'missing_portion', 'baseline']
     
     yields
-        matrix: numpy array
+        matrix: Numpy array
             processed feature matrix
-        f_names: list
-            processed features
-            [feature name]_[val/ant]_[last_nth_timepoint]_[ori/norm]
-            [feature name]_[val/ant]_[four features-wise information]
+        f_names_new: list
+            processed feature names, in the following format:
+            [feature name]_[val/ant]_[last_nth_timepoint]_[ori/norm] 
+            or
+            [feature name]_[val/ant]_[features-wise information]
                 [val/ant] represents:
                     1) val: feature value it self, if missing, replace with -3000
                     2) ant: missing value annotation, 1/0
                 [ori/norm] represents the following information for last t time points:
                     1) ori: original value of the above, if missing, replace with -5000
                     2) norm: normed by quantile of the above
-                [four feature-wise information] represents the following feature-wise information:
-                    2) std: feature-wise std
-                    3) mp: portion of missing values for each feature 
-                    4) bs: for val,  the earliest feature value for this feature; 
+                [feature-wise information] represents the following feature-wise information:
+                    1) std: feature-wise std
+                    2) mp: portion of missing values for each feature 
+                    3) bs: for val,  the earliest feature value for this feature; 
                            for ant, the earliest existing timepoint for this feature
     """
 
@@ -43,7 +44,7 @@ def construct_feature_matrix(data, t, f):
 
         yields
             processed_data: a i x 2j Numpy array
-                for every feature, propagate an extra column to annote if it is missing (1/0)
+                for every feature, propagate an extra column to annotate if it is missing (1/0)
 
         """
         try:
@@ -144,52 +145,51 @@ def construct_feature_matrix(data, t, f):
     if 'baseline' in f:
         new_t +=2
 
-    i=data.shape[0]-1 # total number of time points
     #print(data.shape)
-    m = []
-    f = []
-    while(i<data.shape[0]):  # there is no loop! just the last timepoint
-        #print(i)
-        new_m  = last_i(data, i, t)
-        m.append(new_m)
-        new_f = [fn+'_'+str(a)+'_ori' for a in range(t)for fn in f_names]
-        f.extend(new_f)
-        #print(new_f)
-
-        if 'norm' in f:
-            d_n, std, mean = norm_features(data)
-            new_m  = last_i(d_n, i, t)
-            #print(new_m.shape)
-            m.append(new_m)
-            new_f = [fn+'_'+str(a)+'_norm' for a in range(t)for fn in f_names]
-            f.extend(new_f)
-
-        if 'std' in f:
-            d_n, std, mean = norm_features(data)
-            #print(std.shape)
-            m.append(std)
-            new_f = [fn+'_std' for fn in f_names]
-            f.extend(new_f)
-
-        if 'missing_portion' in f:
-            new_m = missing_portion(data)
-            #print(new_m.shape)
-            m.append(new_m)
-            new_f = [fn+'_mp' for fn in f_names]
-            f.extend(new_f)
-
-        if 'baseline' in f:
-            new_m = baseline(data)
-            #print(new_m.shape)
-            m.append(new_m)
-            new_f = [fn+'_bs' for fn in f_names]
-            f.extend(new_f)
-
-        i=i+1
+    matrix = []
+    f_names_new = []
+    i=data.shape[0]-1  # the total timepoints
     
-    m = np.concatenate(m, axis = 0)
-    matrix = np.reshape(m, (1, m.shape[0])) 
+    # crop out last t original values
+    new_m  = last_i(data, i, t)
+    matrix.append(new_m)
+    new_f = [fn+'_'+str(a)+'_ori' for a in range(t)for fn in f_names]
+    f_names_new.extend(new_f)
+    #print(new_f)
+
+    if 'norm' in f:
+        d_n, std, mean = norm_features(data)
+        new_m  = last_i(d_n, i, t)
+        #print(new_m.shape)
+        matrix.append(new_m)
+        new_f = [fn+'_'+str(a)+'_norm' for a in range(t)for fn in f_names]
+        f_names_new.extend(new_f)
+
+    if 'std' in f:
+        d_n, std, mean = norm_features(data)
+        #print(std.shape)
+        matrix.append(std)
+        new_f = [fn+'_std' for fn in f_names]
+        f_names_new.extend(new_f)
+
+    if 'missing_portion' in f:
+        new_m = missing_portion(data)
+        #print(new_m.shape)
+        matrix.append(new_m)
+        new_f = [fn+'_mp' for fn in f_names]
+        f_names_new.extend(new_f)
+
+    if 'baseline' in f:
+        new_m = baseline(data)
+        #print(new_m.shape)
+        matrix.append(new_m)
+        new_f = [fn+'_bs' for fn in f_names]
+        f_names_new.extend(new_f)
+
+    
+    matrix = np.concatenate(matrix, axis = 0)
+    matrix = np.reshape(matrix, (1, matrix.shape[0])) 
     #print(matrix.shape)
 
-    return matrix, f
+    return matrix, f_names_new
 
