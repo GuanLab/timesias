@@ -41,7 +41,7 @@ HR feature_1 featuyre_2 ... feature_n-1 feature_n
 ``` r
 python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES]
 ```
-* `[GS_FILE_PATH]`: the path to gold-standards and file path file;
+* `GS_FILE_PATH`: the path to gold-standards and file path file;
 * `LAST_N_RECORDS`: last n records used for prediction. defulat: 16;
 * `EXTRA_FEATURES`: addtional features used for prediction. defualt: all features we used in DII Data challenge.
 
