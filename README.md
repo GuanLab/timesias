@@ -3,6 +3,10 @@
 
 ## Installation
 
+Clone this program to your local directory: 
+``` r
+git clone https://github.com/GuanLab/sepsis.git
+```
 ## Dependency
 
 * [python (3.7.4)](https://www.python.org/)
@@ -11,6 +15,7 @@
 * [LightGBM (3.1.1)](https://pypi.org/project/lightgbm/)
 * [scikit-learn (0.19.0)](https://scikit-learn.org/stable/) 
 * [shap (0.38.1)](https://pypi.org/project/shap/)
+
 ## Input data format
 
 The example data in the data/ are randomly generated data for the demonstration of the algorithm.
@@ -32,7 +37,7 @@ Two types of data is requied for model training and prediction:
 	The header of psv file are the feature names. To note, the first column is the time index.
 
 ``` r
-HR feature_1 featuyre_2 ... feature_n-1 feature_n
+HR feature_1 feature_2 ... feature_n-1 feature_n
 0.0 1 0.0 ... 1.3 0.0 
 1.0 NaN 0.0 ... 0.0 0.0
 3.5 NaN 2.3 ... 0.0 0.0
