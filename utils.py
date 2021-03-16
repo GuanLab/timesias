@@ -18,9 +18,9 @@ def construct_feature_matrix(data, t, f):
             processed feature matrix
         f_names_new: list
             processed feature names, in the following format:
-            [feature name]_[val/ant]_[last_nth_timepoint]_[ori/norm] 
+            [feature name]|[val/ant]|[last_nth_timepoint]|[ori/norm] 
             or
-            [feature name]_[val/ant]_[features-wise information]
+            [feature name]|[val/ant]|[features-wise information]
                 [val/ant] represents:
                     1) val: feature value it self, if missing, replace with -3000
                     2) ant: missing value annotation, 1/0
@@ -127,7 +127,7 @@ def construct_feature_matrix(data, t, f):
     
     data =  np.array(data)
     data = annote_missing_features(data)
-    f_names = [f+a for f in f_names for a in ['_val', '_ant']]
+    f_names = [f+a for f in f_names for a in ['|val', '|ant']]
 
     #try:
     #    j=data.shape[1]  # total number of features 187*2 = 374, extend two fold
@@ -153,7 +153,7 @@ def construct_feature_matrix(data, t, f):
     # crop out last t original values
     new_m  = last_i(data, i, t)
     matrix.append(new_m)
-    new_f = [fn+'_'+str(a)+'_ori' for a in range(t)for fn in f_names]
+    new_f = [fn+'|'+str(a)+'|ori' for a in range(t)for fn in f_names]
     f_names_new.extend(new_f)
     #print(new_f)
 
@@ -162,28 +162,28 @@ def construct_feature_matrix(data, t, f):
         new_m  = last_i(d_n, i, t)
         #print(new_m.shape)
         matrix.append(new_m)
-        new_f = [fn+'_'+str(a)+'_norm' for a in range(t)for fn in f_names]
+        new_f = [fn+'|'+str(a)+'|norm' for a in range(t)for fn in f_names]
         f_names_new.extend(new_f)
 
     if 'std' in f:
         d_n, std, mean = norm_features(data)
         #print(std.shape)
         matrix.append(std)
-        new_f = [fn+'_std' for fn in f_names]
+        new_f = [fn+'|std' for fn in f_names]
         f_names_new.extend(new_f)
 
     if 'missing_portion' in f:
         new_m = missing_portion(data)
         #print(new_m.shape)
         matrix.append(new_m)
-        new_f = [fn+'_mp' for fn in f_names]
+        new_f = [fn+'|mp' for fn in f_names]
         f_names_new.extend(new_f)
 
     if 'baseline' in f:
         new_m = baseline(data)
         #print(new_m.shape)
         matrix.append(new_m)
-        new_f = [fn+'_bs' for fn in f_names]
+        new_f = [fn+'|bs' for fn in f_names]
         f_names_new.extend(new_f)
 
     

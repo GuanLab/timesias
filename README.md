@@ -52,6 +52,12 @@ python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES]
 
 This will generate models, which will be saved under a new directory `./models`
 
+# Top feature evaluation
+
+![](top_feature_report_example.html)
+
+
+
 ## Other applications of this method
 
 This method can be generalized to be used on other hospitalization data. One application of this method is the [COVID-19 DREAM Challenge](https://www.synapse.org/#!Synapse:syn21849255/wiki/602411), where this method also achieves top performance.

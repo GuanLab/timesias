@@ -15,9 +15,12 @@ def main():
     parser.add_argument('-f','--extra_features', type=str,
             default = ['norm', 'std', 'missing_portion', 'baseline'],
             help = '''
-            which extra features to use.
+            Which extra features to use.
             default: ['norm', 'std', 'missing_portion', 'baseline']
             ''')
+    parser.add_argument('--shap',
+            action = 'store_true',
+            help = 'Conduct shap analysis on test set')
 
     args = parser.parse_args()
     
@@ -26,9 +29,9 @@ def main():
     run(**opts)
 
 
-def run(gs_file_path, last_n_records, extra_features):
-    five_fold_cv(gs_file_path, last_n_records, extra_features)
-
+def run(gs_file_path, last_n_records, extra_features, shap):
+    five_fold_cv(gs_file_path, last_n_records, extra_features, shap)
+    #specific_evaluation(gs_file_path, last_n_records, extra_features)
 
 if __name__ == '__main__':
     main()
