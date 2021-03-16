@@ -55,7 +55,7 @@ This will generate models, which will be saved under a new directory `./models`
 # Top feature evaluation
 if `--shap` is indicated, SHAP analysis to show top contributing  measurements and last n time points.
 
-![](top_feature_report_example.html)
+![](top_feature_report_example.png)
 
 
 ## Other applications of this method
