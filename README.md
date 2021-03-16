@@ -44,7 +44,7 @@ HR feature_1 feature_2 ... feature_n-1 feature_n
 ```
 ## Model training and cross validation
 ``` r
-python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES]
+python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES] --shap
 ```
 * `GS_FILE_PATH`: the path to gold-standards and file path file;
 * `LAST_N_RECORDS`: last n records used for prediction. defulat: 16;
@@ -53,9 +53,9 @@ python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES]
 This will generate models, which will be saved under a new directory `./models`
 
 # Top feature evaluation
+if `--shap` is indicated, SHAP analysis to show top contributing  measurements and last n time points.
 
 ![](top_feature_report_example.html)
-
 
 
 ## Other applications of this method
