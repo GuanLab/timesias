@@ -80,7 +80,6 @@ def five_fold_cv(gs_filepath, n, f, shap):
         all_t_shap = []
     
     for i,(train_idx, test_idx) in enumerate(kf.split(f_path)):
-        print(test_idx)
         # load train
         train_f = [f_path[j] for j in train_idx]
         train_matrix, _ = load_data(train_f, n, f)
