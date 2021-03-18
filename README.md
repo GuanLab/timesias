@@ -69,10 +69,11 @@ Evaluation results during five-fold cross validation will be stored in `eva.tsv`
 
 # Top feature evaluation
 
-if `--shap` is indicated, SHAP analysis to show top contributing  measurements and last n time points.
+if `--shap` is indicated, SHAP analysis will be carried out to show top contributing measurements and last nth time points. This will generate an html report (`top_feature_report.html`) like the following:
 
-![](top_feature_report_example.png)
+![Figure1](top_feature_report_example.png)
 
+The corresponding shap values in Figure1 will be stored in `shap_group_by_measurment.csv` and `shap_group_by_timeslot.csv`.
 
 ## Other applications of this method
 
