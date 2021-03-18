@@ -73,7 +73,7 @@ if `--shap` is indicated, SHAP analysis will be carried out to show top contribu
 
 ![Figure1](top_feature_report_example.png)
 
-The corresponding shap values in Figure1 will be stored in `shap_group_by_measurment.csv` and `shap_group_by_timeslot.csv`.
+The corresponding shap values will be stored in `shap_group_by_measurment.csv` and `shap_group_by_timeslot.csv`.
 
 ## Other applications of this method
 
