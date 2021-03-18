@@ -16,6 +16,9 @@ git clone https://github.com/GuanLab/sepsis.git
 * [scikit-learn (0.19.0)](https://scikit-learn.org/stable/) 
 * [shap (0.38.1)](https://pypi.org/project/shap/)
 
+For visualization:
+* [boken (2.3.0)](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html)
+
 ## Input data format
 
 The example data in the data/ are randomly generated data for the demonstration of the algorithm.
