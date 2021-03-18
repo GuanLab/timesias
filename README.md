@@ -71,7 +71,9 @@ Evaluation results during five-fold cross validation will be stored in `eva.tsv`
 
 if `--shap` is indicated, SHAP analysis will be carried out to show top contributing measurements and last nth time points. This will generate an html report (`top_feature_report.html`) like the following:
 
-![Figure1](top_feature_report_example.png)
+<p align="center">
+<img width="800", src ="https://github.com/GuanLab/sepsis/blob/master/top_feature_report_example.png">
+</p>
 
 The corresponding shap values will be stored in `shap_group_by_measurment.csv` and `shap_group_by_timeslot.csv`.
 
