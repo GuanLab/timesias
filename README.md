@@ -24,7 +24,7 @@ For visualization:
 The example data in the data/ are randomly generated data for the demonstration of the algorithm.
 
 Two types of data is requied for model training and prediction:
-* `gs.file`: `.txt` file two columns. The first column if file name index. The second column is the gold standard (0/1), representing the final outbreak of sepsis
+* `gs.file`: `.txt` file two columns. The first column is file name index. The second column is the gold standard (0/1), representing the final outbreak of sepsis
 
 ``` 
 0.psv,1
