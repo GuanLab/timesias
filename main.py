@@ -2,14 +2,14 @@ import sys, os, argparse, textwrap
 from common import *
 
 def main():
-    parser = argparse.ArgumentParser(description = 'Predict outcome from time-series data',
+    parser = argparse.ArgumentParser(description = 'Predict outcomes from time-series data',
             usage = 'use "python %(prog)s --help" for more information',
             formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-g','--gs_file_path', type=str,
-            help = 'path to gold-standards and file path file')
+            help = 'path to the gold-standard file, for example, ./data/gs.file')
 
     parser.add_argument('-t','--last_n_records', type=int,
-            help = 'Use last n records. defulat: 16',
+            help = 'Use last n records. default: 16',
             default =  16)
 
     parser.add_argument('-f','--extra_features', type=str,
@@ -21,7 +21,7 @@ def main():
             ''')
     parser.add_argument('--shap',
             action = 'store_true',
-            help = 'Conduct shap analysis on test set')
+            help = 'Conduct shap analysis on the test set')
 
     args = parser.parse_args()
     

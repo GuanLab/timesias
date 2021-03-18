@@ -1,936 +1,936 @@
-feature,mean|SHAP val|
-HR,0.002341358046735526
-A/G Ratio,0.0
-ALT/SGPT,0.05936060304993018
-AST/SGOT,0.0196682924107123
-Albumin Quant,0.0
-"Albumin, Serum",0.0
-"Alk Phos, Serum",0.0011285912018537824
-"Amylase, Serum",0.0
-Anion Gap,0.0
-BMI,0.0032982957502219455
-BNP-B Type Natriuretic Peptide,0.0
-BUN/Creat Ratio,0.0
-Base Excess,0.0
-Base Excess Calc,0.0
-"Base Excess Calc, Arterial",0.0
-Baso %,0.0
-Baso Abs,0.0
-Baso Abs Cnt Bld,0.0
-"Bilirubin Direct, Serum",0.0
-Bilirubin Serum Quant,0.0
-Bilirubin Total Bld mCnc,0.003782707687000652
-Blood Urea Nitrogen,0.0
-Body Surface Area,0.011582796631831354
-Braden Scale,0.005569242488051637
-"CK/CPK, Total, Serum",0.0
-CKMB,0.0
-CO2,0.0
-"CO2 Total, Arterial",0.0
-"CO2 Total, Serum",0.011643605643328107
-Calcium Ionized,0.0
-Calcium Quant,0.03507741507038496
-"Calcium, Serum",0.01246242261268841
-Chol HDL,0.0
-"Chol Total, Serum",0.0
-"Cl, Serum",0.014931689078998583
-"Creatinine, Serum Quant",0.0040628815570132055
-DBP,0.005812953661348545
-Diff Bands,0.0
-"Diff Bands, Abs",0.0
-Diff Blast,0.0
-Diff Nucleated RBC,0.0018323190272586155
-"Diff, Eosinophil %",0.0
-"Diff, Eosinophil Abs Quant Bld",0.0
-"Diff, Eosinophil Count %",0.0
-"Diff, Eosinophil Count, Abs",0.012318336438916316
-"Diff, Granulocyte %",0.0
-ETCO2,0.0
-FLACC Pain Scale,0.0
-FiO2,0.0
-GFR/BSA Pred Black SerPl MDRD ArVRat,0.0
-GFR/BSA Pred non black SerPl MDRD ArVRat,0.0
-Glasgow Coma Score,0.024629279184597144
-"Globulin, Serum",0.02223548155758886
-Glomerular Filtration Rate,0.0
-"Glomerular Filtration Rate, Est",0.0
-Glucose Stick/Meter WBlood POC,0.0
-Glucose WBlood Quant,0.0
-"Glucose, Serum Quant",0.018238209079736223
-HCO3,0.0
-"HCO3, Arterial",0.0
-HR.1,0.0
-HR Apical,0.006078304818798838
-HR Monitored,0.0
-Hct,0.0
-Height,0.026244219621023062
-Hgb,0.0
-Hgb A1C,0.014320084440986685
-INR Platelet Poor Plasma,0.0
-"Imm Granulocytes Cnt Bld Auto, %",0.0
-"Imm Granulocytes Cnt Bld Auto, Abs",0.0
-International Normalized Ratio,0.0
-"Iron, Serum",0.0
-Lactic Acid Blood,0.0
-Lactic Dehydrogenase,0.0
-"Lipase, Serum",0.0
-Lymph %,0.0
-Lymph Abs Cnt,0.005017125898561248
-"Lymphocytes Cnt Bld Auto,%",0.0
-"Lymphocytes Cnt Bld Auto,Abs",0.0
-Lymphocytes NFr Bld Auto,0.0
-MAP,0.004342405731070832
-MCH Concentration,0.0
-Magnesium,0.0
-"Magnesium, Serum/Plasma",0.0
-Mean Corpuscular Hemoglobin,0.0
-Mean Corpuscular Volume,0.0
-Mean Platelet Volume,0.0
-Mono %,0.0
-Mono Abs Cnt Bld,0.0
-Neutrophil %,0.0
-Neutrophil Abs Bld Cnt,0.0
-Neutrophil Seg,0.0
-"Nucleated RBC Ratio, Blood Auto",0.0
-PCO2,0.0
-"PCO2, Arterial",0.0
-PO2,0.0
-"PO2, Arterial",0.0
-PT,0.004941679785351009
-PT Time PPP,0.0
-PTT,0.0
-PTT/APTT PPP,0.0
-PaO2,0.0
-Pain Score,0.004842298023039716
-Peak inspiratory pressure,0.0
-Peep,0.0
-"Phosphorus, Serum",0.0
-Platelet Count,0.013559512781349686
-"Potassium, Serum",0.0
-"Protein Total, Serum",0.0
-Pulse,0.03457611548254689
-Pulse Oximetry,0.0
-Pulse Peripheral,0.0
-QRS Duration,0.0
-QT Interval,0.0
-RBC,0.0
-Red Blood Cell Distribution Width,0.0
-Resp Rt,0.08838526681457153
-Resp Rt Tot,0.0
-SBP,0.027706646299256683
-SO2,0.0
-SPO2,0.0
-SaO2,0.0
-"SaO2 %, Arterial",0.0
-"Sodium, Serum",0.0
-Specific Gravity Urine,0.0
-TCO2,0.0
-Temp,0.008382981599865636
-Temp Axillary,0.0
-Temp Oral,0.0
-Temp Temporal Artery,0.0
-Temp Tympanic,0.01936304344130067
-Thyroid Stimulating Hormone,0.0
-Tidal Volume,0.0
-"Triglyceride, Serum",0.0
-Troponin I,0.0
-Troponin T S/Pl,0.0
-UA Red Blood Cell,0.0
-UA Urobilinogen,0.0
-UA WBC,0.0
-"Vitamin B12, Serum",0.0
-WBC,0.0
-Weight,0.01600194904651815
-"pH, Arterial",0.0
-"pH, Urine",0.0
-genderandMale,0.00473135815889668
-raceandAfrican American,0.0
-admission_typeandEmergency,0.025919469011280845
-admission_sourceandEmergency Room,0.0
-care_settingandCare Setting Undefined,0.00393041788846608
-age_grpand70~80,0.0
-raceandCaucasian,0.003949078864583528
-admission_typeandUrgent,0.0
-admission_sourceandPhysician Referral,0.0
-care_settingandNeurology,0.0
-age_grpand40~50,0.0
-genderandFemale,0.08598416965927728
-admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0
-care_settingandMedical/Surgical,0.0
-age_grpand>=80,0.0
-admission_typeandElective,0.0
-age_grpand50~60,0.0
-age_grpand60~70,0.0
-admission_sourceandOthers/unknown,0.0
-age_grpand30~40,0.0
-care_settingandIntensive Care Unit,0.0
-admission_sourceandClinic Referral,0.0
-care_settingandOthers/unknown,0.0
-care_settingandSurgery,0.0
-age_grpand20~30,0.0
-raceandOthers/unknown,0.0
-admission_sourceandTransfer from a hospital,0.0013909019553085987
-care_settingandAmbulatory Unit,0.0
-age_grpand<20,0.0
-admission_typeandOthers/unknown,0.0
-admission_typeandTrauma Center,0.011091294339523473
-raceandAsian,0.0
-care_settingandCardiology,0.0
-care_settingandOrthopedics,0.0
-care_settingandCoronary Care Unit,0.0
-care_settingandStep-Down Unit,0.0
-admission_sourceandTransfer from another health care facility,0.0
-care_settingandStep-Down Unit - Cardiac,0.0
-care_settingandObstetrics,0.0
-care_settingandPhysical Rehabilitation,0.0
-care_settingandGeneral Medicine,0.0
-care_settingandOncology,0.0
-admission_sourceandInformation Not Available,0.0
-HR,0.02892641102982496
-A/G Ratio,0.0
-ALT/SGPT,0.0016203691967987461
-AST/SGOT,0.0
-Albumin Quant,0.0
-"Albumin, Serum",0.0
-"Alk Phos, Serum",0.0
-"Amylase, Serum",0.0
-Anion Gap,0.0
-BMI,0.0
-BNP-B Type Natriuretic Peptide,0.0
-BUN/Creat Ratio,0.0
-Base Excess,0.0
-Base Excess Calc,0.0
-"Base Excess Calc, Arterial",0.0
-Baso %,0.0
-Baso Abs,0.0016658623316759865
-Baso Abs Cnt Bld,0.0
-"Bilirubin Direct, Serum",0.0
-Bilirubin Serum Quant,0.0
-Bilirubin Total Bld mCnc,0.0
-Blood Urea Nitrogen,0.005251944375125514
-Body Surface Area,0.0010057329133209775
-Braden Scale,0.04417306896297661
-"CK/CPK, Total, Serum",0.0
-CKMB,0.0
-CO2,0.0
-"CO2 Total, Arterial",0.0
-"CO2 Total, Serum",0.0
-Calcium Ionized,0.0
-Calcium Quant,0.0
-"Calcium, Serum",0.020463056721805654
-Chol HDL,0.0
-"Chol Total, Serum",0.0
-"Cl, Serum",0.0
-"Creatinine, Serum Quant",0.0
-DBP,0.0
-Diff Bands,0.0
-"Diff Bands, Abs",0.0
-Diff Blast,0.0
-Diff Nucleated RBC,0.0
-"Diff, Eosinophil %",0.0
-"Diff, Eosinophil Abs Quant Bld",0.0
-"Diff, Eosinophil Count %",0.0
-"Diff, Eosinophil Count, Abs",0.0
-"Diff, Granulocyte %",0.0
-ETCO2,0.0
-FLACC Pain Scale,0.0
-FiO2,0.0
-GFR/BSA Pred Black SerPl MDRD ArVRat,0.0
-GFR/BSA Pred non black SerPl MDRD ArVRat,0.0
-Glasgow Coma Score,0.016632330142179165
-"Globulin, Serum",0.0027833360855205502
-Glomerular Filtration Rate,0.0
-"Glomerular Filtration Rate, Est",0.0
-Glucose Stick/Meter WBlood POC,0.0
-Glucose WBlood Quant,0.0
-"Glucose, Serum Quant",0.13498339845335827
-HCO3,0.0
-"HCO3, Arterial",0.0
-HR.1,0.0
-HR Apical,0.0
-HR Monitored,0.0
-Hct,0.0026481820349338893
-Height,0.0
-Hgb,0.0
-Hgb A1C,0.0
-INR Platelet Poor Plasma,0.0
-"Imm Granulocytes Cnt Bld Auto, %",0.0
-"Imm Granulocytes Cnt Bld Auto, Abs",0.0
-International Normalized Ratio,0.004079954469908823
-"Iron, Serum",0.0
-Lactic Acid Blood,0.0
-Lactic Dehydrogenase,0.00890613484371877
-"Lipase, Serum",0.0
-Lymph %,0.0
-Lymph Abs Cnt,0.0
-"Lymphocytes Cnt Bld Auto,%",0.0
-"Lymphocytes Cnt Bld Auto,Abs",0.0
-Lymphocytes NFr Bld Auto,0.0
-MAP,0.008690140918664114
-MCH Concentration,0.0
-Magnesium,0.0
-"Magnesium, Serum/Plasma",0.0
-Mean Corpuscular Hemoglobin,0.0
-Mean Corpuscular Volume,0.0
-Mean Platelet Volume,0.02347175356318141
-Mono %,0.0
-Mono Abs Cnt Bld,0.0
-Neutrophil %,0.0
-Neutrophil Abs Bld Cnt,0.0
-Neutrophil Seg,0.0
-"Nucleated RBC Ratio, Blood Auto",0.0
-PCO2,0.0
-"PCO2, Arterial",0.0
-PO2,0.0
-"PO2, Arterial",0.0
-PT,0.0
-PT Time PPP,0.0
-PTT,0.0
-PTT/APTT PPP,0.0
-PaO2,0.0
-Pain Score,0.00806154634985494
-Peak inspiratory pressure,0.0
-Peep,0.0
-"Phosphorus, Serum",0.0
-Platelet Count,0.01937962543087169
-"Potassium, Serum",0.003740460341846558
-"Protein Total, Serum",0.0
-Pulse,0.0052317604942786755
-Pulse Oximetry,0.0
-Pulse Peripheral,0.0
-QRS Duration,0.0
-QT Interval,0.0
-RBC,0.0
-Red Blood Cell Distribution Width,0.0
-Resp Rt,0.05111705246787694
-Resp Rt Tot,0.0
-SBP,0.009442587637292842
-SO2,0.0
-SPO2,0.0007547854878402386
-SaO2,0.0
-"SaO2 %, Arterial",0.0
-"Sodium, Serum",0.005676997253450297
-Specific Gravity Urine,0.0
-TCO2,0.0
-Temp,0.0
-Temp Axillary,0.0
-Temp Oral,0.0020982828965398657
-Temp Temporal Artery,0.0
-Temp Tympanic,0.0
-Thyroid Stimulating Hormone,0.0
-Tidal Volume,0.0
-"Triglyceride, Serum",0.0
-Troponin I,0.0
-Troponin T S/Pl,0.0
-UA Red Blood Cell,0.0
-UA Urobilinogen,0.0
-UA WBC,0.0
-"Vitamin B12, Serum",0.0
-WBC,0.007514037903152085
-Weight,0.0
-"pH, Arterial",0.0
-"pH, Urine",0.0
-genderandMale,0.0016967042321597951
-raceandAfrican American,0.0
-admission_typeandEmergency,0.009586067595929339
-admission_sourceandEmergency Room,0.0
-care_settingandCare Setting Undefined,0.014209525987882821
-age_grpand70~80,0.0
-raceandCaucasian,0.023338003962473427
-admission_typeandUrgent,0.0
-admission_sourceandPhysician Referral,0.013286077430963408
-care_settingandNeurology,0.0
-age_grpand40~50,0.0
-genderandFemale,0.09565808868240558
-admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0
-care_settingandMedical/Surgical,0.0
-age_grpand>=80,0.0
-admission_typeandElective,0.0
-age_grpand50~60,0.0
-age_grpand60~70,0.0
-admission_sourceandOthers/unknown,0.0
-age_grpand30~40,0.0
-care_settingandIntensive Care Unit,0.0
-admission_sourceandClinic Referral,0.0
-care_settingandOthers/unknown,0.0
-care_settingandSurgery,0.0
-age_grpand20~30,0.0
-raceandOthers/unknown,0.0
-admission_sourceandTransfer from a hospital,0.0
-care_settingandAmbulatory Unit,0.0
-age_grpand<20,0.0
-admission_typeandOthers/unknown,0.0
-admission_typeandTrauma Center,0.0
-raceandAsian,0.0
-care_settingandCardiology,0.0
-care_settingandOrthopedics,0.0
-care_settingandCoronary Care Unit,0.0
-care_settingandStep-Down Unit,0.0
-admission_sourceandTransfer from another health care facility,0.0
-care_settingandStep-Down Unit - Cardiac,0.0
-care_settingandObstetrics,0.0
-care_settingandPhysical Rehabilitation,0.0
-care_settingandGeneral Medicine,0.0
-care_settingandOncology,0.0
-admission_sourceandInformation Not Available,0.0
-HR,0.00865568626355844
-A/G Ratio,0.0
-ALT/SGPT,0.03850370966113863
-AST/SGOT,0.0
-Albumin Quant,0.0
-"Albumin, Serum",0.0
-"Alk Phos, Serum",0.0
-"Amylase, Serum",0.0
-Anion Gap,0.0
-BMI,0.0214996569536793
-BNP-B Type Natriuretic Peptide,0.0
-BUN/Creat Ratio,0.0
-Base Excess,0.0
-Base Excess Calc,0.0
-"Base Excess Calc, Arterial",0.0
-Baso %,0.0
-Baso Abs,0.0014553169501790157
-Baso Abs Cnt Bld,0.0
-"Bilirubin Direct, Serum",0.00923579092623716
-Bilirubin Serum Quant,0.0
-Bilirubin Total Bld mCnc,0.0
-Blood Urea Nitrogen,0.0
-Body Surface Area,0.012471759675444746
-Braden Scale,0.0
-"CK/CPK, Total, Serum",0.0
-CKMB,0.0
-CO2,0.0
-"CO2 Total, Arterial",0.0
-"CO2 Total, Serum",0.01259108281763433
-Calcium Ionized,0.0
-Calcium Quant,0.0
-"Calcium, Serum",0.023662708813867832
-Chol HDL,0.0
-"Chol Total, Serum",0.0
-"Cl, Serum",0.0
-"Creatinine, Serum Quant",0.0
-DBP,0.020506262392746676
-Diff Bands,0.0
-"Diff Bands, Abs",0.0
-Diff Blast,0.0
-Diff Nucleated RBC,0.0
-"Diff, Eosinophil %",0.0
-"Diff, Eosinophil Abs Quant Bld",0.0
-"Diff, Eosinophil Count %",0.0
-"Diff, Eosinophil Count, Abs",0.0163109105400541
-"Diff, Granulocyte %",0.0
-ETCO2,0.0
-FLACC Pain Scale,0.0
-FiO2,0.0
-GFR/BSA Pred Black SerPl MDRD ArVRat,0.0
-GFR/BSA Pred non black SerPl MDRD ArVRat,0.0
-Glasgow Coma Score,0.009277207248350117
-"Globulin, Serum",0.057499328940641005
-Glomerular Filtration Rate,0.0
-"Glomerular Filtration Rate, Est",0.0
-Glucose Stick/Meter WBlood POC,0.0
-Glucose WBlood Quant,0.0
-"Glucose, Serum Quant",0.004695060580137321
-HCO3,0.0
-"HCO3, Arterial",0.0
-HR.1,0.0
-HR Apical,0.0
-HR Monitored,0.0
-Hct,0.0
-Height,0.0010643684187998516
-Hgb,0.0
-Hgb A1C,0.0018354513562129193
-INR Platelet Poor Plasma,0.0
-"Imm Granulocytes Cnt Bld Auto, %",0.0
-"Imm Granulocytes Cnt Bld Auto, Abs",0.0
-International Normalized Ratio,0.00044984571240465376
-"Iron, Serum",0.0
-Lactic Acid Blood,0.005914431192278053
-Lactic Dehydrogenase,0.016537781278483203
-"Lipase, Serum",0.0
-Lymph %,0.02793158713140263
-Lymph Abs Cnt,0.0
-"Lymphocytes Cnt Bld Auto,%",0.0
-"Lymphocytes Cnt Bld Auto,Abs",0.0
-Lymphocytes NFr Bld Auto,0.0
-MAP,0.002796829836735365
-MCH Concentration,0.0
-Magnesium,0.0
-"Magnesium, Serum/Plasma",0.0
-Mean Corpuscular Hemoglobin,0.011607416555755343
-Mean Corpuscular Volume,0.0
-Mean Platelet Volume,0.0
-Mono %,0.0
-Mono Abs Cnt Bld,0.0
-Neutrophil %,0.0
-Neutrophil Abs Bld Cnt,0.0
-Neutrophil Seg,0.0
-"Nucleated RBC Ratio, Blood Auto",0.0
-PCO2,0.0
-"PCO2, Arterial",0.0
-PO2,0.0
-"PO2, Arterial",0.0
-PT,0.0
-PT Time PPP,0.0
-PTT,0.0
-PTT/APTT PPP,0.0
-PaO2,0.0
-Pain Score,0.030470024150564455
-Peak inspiratory pressure,0.0
-Peep,0.0
-"Phosphorus, Serum",0.0
-Platelet Count,0.01196246069711199
-"Potassium, Serum",0.0
-"Protein Total, Serum",0.0
-Pulse,0.022715682193666178
-Pulse Oximetry,0.0
-Pulse Peripheral,0.0
-QRS Duration,0.0
-QT Interval,0.0
-RBC,0.0039844585675810635
-Red Blood Cell Distribution Width,0.0
-Resp Rt,0.03276158640717097
-Resp Rt Tot,0.0
-SBP,0.04801120855963927
-SO2,0.0
-SPO2,0.0
-SaO2,0.0
-"SaO2 %, Arterial",0.0
-"Sodium, Serum",0.0
-Specific Gravity Urine,0.0
-TCO2,0.0
-Temp,0.024922357871028953
-Temp Axillary,0.0
-Temp Oral,0.0
-Temp Temporal Artery,0.0
-Temp Tympanic,0.0
-Thyroid Stimulating Hormone,0.0
-Tidal Volume,0.0
-"Triglyceride, Serum",0.0
-Troponin I,0.0
-Troponin T S/Pl,0.0
-UA Red Blood Cell,0.0
-UA Urobilinogen,0.0
-UA WBC,0.0
-"Vitamin B12, Serum",0.0
-WBC,0.0
-Weight,0.021943426796307893
-"pH, Arterial",0.0
-"pH, Urine",0.0
-genderandMale,0.00454515437199379
-raceandAfrican American,0.0
-admission_typeandEmergency,0.004503075765624332
-admission_sourceandEmergency Room,0.0
-care_settingandCare Setting Undefined,0.004521745662716637
-age_grpand70~80,0.0
-raceandCaucasian,0.03218707631342536
-admission_typeandUrgent,0.0
-admission_sourceandPhysician Referral,0.005050277032748065
-care_settingandNeurology,0.0
-age_grpand40~50,0.0
-genderandFemale,0.018999181293273822
-admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0
-care_settingandMedical/Surgical,0.0
-age_grpand>=80,0.0
-admission_typeandElective,0.0
-age_grpand50~60,0.001484068782048543
-age_grpand60~70,0.017774282932980452
-admission_sourceandOthers/unknown,0.0
-age_grpand30~40,0.0
-care_settingandIntensive Care Unit,0.0
-admission_sourceandClinic Referral,0.0
-care_settingandOthers/unknown,0.0
-care_settingandSurgery,0.0
-age_grpand20~30,0.005042357605647804
-raceandOthers/unknown,0.0
-admission_sourceandTransfer from a hospital,0.0
-care_settingandAmbulatory Unit,0.0
-age_grpand<20,0.030272551554503237
-admission_typeandOthers/unknown,0.0
-admission_typeandTrauma Center,0.0
-raceandAsian,0.0
-care_settingandCardiology,0.0022963581421035564
-care_settingandOrthopedics,0.0
-care_settingandCoronary Care Unit,0.0
-care_settingandStep-Down Unit,0.0
-admission_sourceandTransfer from another health care facility,0.0
-care_settingandStep-Down Unit - Cardiac,0.0
-care_settingandObstetrics,0.0
-care_settingandPhysical Rehabilitation,0.0
-care_settingandGeneral Medicine,0.0
-care_settingandOncology,0.0
-admission_sourceandInformation Not Available,0.0
-HR,0.0
-A/G Ratio,0.0
-ALT/SGPT,0.006840027986387253
-AST/SGOT,0.003917176513408777
-Albumin Quant,0.0
-"Albumin, Serum",0.0
-"Alk Phos, Serum",0.0
-"Amylase, Serum",0.0
-Anion Gap,0.0
-BMI,0.0008025549819998059
-BNP-B Type Natriuretic Peptide,0.0
-BUN/Creat Ratio,0.0
-Base Excess,0.0
-Base Excess Calc,0.0
-"Base Excess Calc, Arterial",0.0
-Baso %,0.0
-Baso Abs,0.002694136412057561
-Baso Abs Cnt Bld,0.0
-"Bilirubin Direct, Serum",0.0
-Bilirubin Serum Quant,0.0
-Bilirubin Total Bld mCnc,0.0027664251988578368
-Blood Urea Nitrogen,0.0
-Body Surface Area,0.005165952380425287
-Braden Scale,0.006810653783996905
-"CK/CPK, Total, Serum",0.0
-CKMB,0.0
-CO2,0.00157466838431723
-"CO2 Total, Arterial",0.0
-"CO2 Total, Serum",0.06367908670045999
-Calcium Ionized,0.0
-Calcium Quant,0.0
-"Calcium, Serum",0.06384928517249319
-Chol HDL,0.0
-"Chol Total, Serum",0.0
-"Cl, Serum",0.0
-"Creatinine, Serum Quant",0.0
-DBP,0.027220159285679817
-Diff Bands,0.0
-"Diff Bands, Abs",0.0
-Diff Blast,0.0
-Diff Nucleated RBC,0.0
-"Diff, Eosinophil %",0.0
-"Diff, Eosinophil Abs Quant Bld",0.0
-"Diff, Eosinophil Count %",0.0
-"Diff, Eosinophil Count, Abs",0.019352232028875718
-"Diff, Granulocyte %",0.0
-ETCO2,0.0
-FLACC Pain Scale,0.0
-FiO2,0.0
-GFR/BSA Pred Black SerPl MDRD ArVRat,0.0
-GFR/BSA Pred non black SerPl MDRD ArVRat,0.0
-Glasgow Coma Score,0.009440934609473015
-"Globulin, Serum",0.0
-Glomerular Filtration Rate,0.0
-"Glomerular Filtration Rate, Est",0.0
-Glucose Stick/Meter WBlood POC,0.0
-Glucose WBlood Quant,0.0
-"Glucose, Serum Quant",0.0
-HCO3,0.0
-"HCO3, Arterial",0.0
-HR.1,0.0
-HR Apical,0.0
-HR Monitored,0.0
-Hct,0.0
-Height,0.0026761856992961837
-Hgb,0.0
-Hgb A1C,0.004564181928839079
-INR Platelet Poor Plasma,0.0
-"Imm Granulocytes Cnt Bld Auto, %",0.0
-"Imm Granulocytes Cnt Bld Auto, Abs",0.0
-International Normalized Ratio,0.0
-"Iron, Serum",0.0
-Lactic Acid Blood,0.0
-Lactic Dehydrogenase,0.0
-"Lipase, Serum",0.0
-Lymph %,0.0
-Lymph Abs Cnt,0.0
-"Lymphocytes Cnt Bld Auto,%",0.0
-"Lymphocytes Cnt Bld Auto,Abs",0.0
-Lymphocytes NFr Bld Auto,0.0
-MAP,0.0
-MCH Concentration,0.0
-Magnesium,0.0
-"Magnesium, Serum/Plasma",0.0
-Mean Corpuscular Hemoglobin,0.0
-Mean Corpuscular Volume,0.0
-Mean Platelet Volume,0.033475454585969365
-Mono %,0.0
-Mono Abs Cnt Bld,0.0
-Neutrophil %,0.0
-Neutrophil Abs Bld Cnt,0.0022376844427442833
-Neutrophil Seg,0.0
-"Nucleated RBC Ratio, Blood Auto",0.0
-PCO2,0.0
-"PCO2, Arterial",0.0
-PO2,0.0
-"PO2, Arterial",0.0
-PT,0.0
-PT Time PPP,0.0
-PTT,0.0
-PTT/APTT PPP,0.0
-PaO2,0.0
-Pain Score,0.0074553916165337394
-Peak inspiratory pressure,0.0
-Peep,0.0
-"Phosphorus, Serum",0.0
-Platelet Count,0.004869253951391992
-"Potassium, Serum",0.0
-"Protein Total, Serum",0.0
-Pulse,0.010904347151422243
-Pulse Oximetry,0.0
-Pulse Peripheral,0.0
-QRS Duration,0.0
-QT Interval,0.0
-RBC,0.0
-Red Blood Cell Distribution Width,0.0
-Resp Rt,0.07920729218374073
-Resp Rt Tot,0.0
-SBP,0.005377112689742504
-SO2,0.0
-SPO2,0.0
-SaO2,0.0
-"SaO2 %, Arterial",0.0
-"Sodium, Serum",0.0
-Specific Gravity Urine,0.0
-TCO2,0.0
-Temp,0.0
-Temp Axillary,0.0
-Temp Oral,0.0
-Temp Temporal Artery,0.0
-Temp Tympanic,0.0
-Thyroid Stimulating Hormone,0.0
-Tidal Volume,0.0
-"Triglyceride, Serum",0.0
-Troponin I,0.0
-Troponin T S/Pl,0.0
-UA Red Blood Cell,0.0
-UA Urobilinogen,0.0
-UA WBC,0.0
-"Vitamin B12, Serum",0.0
-WBC,0.0
-Weight,0.05706373226324403
-"pH, Arterial",0.0
-"pH, Urine",0.0
-genderandMale,0.0
-raceandAfrican American,0.0
-admission_typeandEmergency,0.0
-admission_sourceandEmergency Room,0.0
-care_settingandCare Setting Undefined,0.0
-age_grpand70~80,0.0
-raceandCaucasian,0.03221478845456828
-admission_typeandUrgent,0.0
-admission_sourceandPhysician Referral,0.0197229168026169
-care_settingandNeurology,0.0
-age_grpand40~50,0.0
-genderandFemale,0.0686658218915612
-admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0
-care_settingandMedical/Surgical,0.0
-age_grpand>=80,0.0
-admission_typeandElective,0.0
-age_grpand50~60,0.0
-age_grpand60~70,0.0
-admission_sourceandOthers/unknown,0.0
-age_grpand30~40,0.0
-care_settingandIntensive Care Unit,0.0
-admission_sourceandClinic Referral,0.0
-care_settingandOthers/unknown,0.0
-care_settingandSurgery,0.0
-age_grpand20~30,0.0
-raceandOthers/unknown,0.0
-admission_sourceandTransfer from a hospital,0.0
-care_settingandAmbulatory Unit,0.0
-age_grpand<20,0.021524900484437358
-admission_typeandOthers/unknown,0.0
-admission_typeandTrauma Center,0.0
-raceandAsian,0.0
-care_settingandCardiology,0.002306852679019077
-care_settingandOrthopedics,0.0
-care_settingandCoronary Care Unit,0.0
-care_settingandStep-Down Unit,0.0
-admission_sourceandTransfer from another health care facility,0.0
-care_settingandStep-Down Unit - Cardiac,0.0
-care_settingandObstetrics,0.0
-care_settingandPhysical Rehabilitation,0.0
-care_settingandGeneral Medicine,0.0
-care_settingandOncology,0.0
-admission_sourceandInformation Not Available,0.0
-HR,0.032919024819263995
-A/G Ratio,0.0
-ALT/SGPT,0.022241201146217505
-AST/SGOT,0.01755477514003744
-Albumin Quant,0.0010773962878791443
-"Albumin, Serum",0.0
-"Alk Phos, Serum",0.008954753321083085
-"Amylase, Serum",0.0
-Anion Gap,0.014953413676416916
-BMI,0.0
-BNP-B Type Natriuretic Peptide,0.0
-BUN/Creat Ratio,0.0
-Base Excess,0.0
-Base Excess Calc,0.0
-"Base Excess Calc, Arterial",0.0
-Baso %,0.0
-Baso Abs,0.006058694335723934
-Baso Abs Cnt Bld,0.0
-"Bilirubin Direct, Serum",0.006941290472089426
-Bilirubin Serum Quant,0.0
-Bilirubin Total Bld mCnc,0.0
-Blood Urea Nitrogen,0.0
-Body Surface Area,0.0
-Braden Scale,0.005719906417622114
-"CK/CPK, Total, Serum",0.0
-CKMB,0.0
-CO2,0.012616997353709494
-"CO2 Total, Arterial",0.0
-"CO2 Total, Serum",0.0
-Calcium Ionized,0.0
-Calcium Quant,0.0
-"Calcium, Serum",0.020562106985083962
-Chol HDL,0.0
-"Chol Total, Serum",0.0
-"Cl, Serum",0.0
-"Creatinine, Serum Quant",0.0
-DBP,0.005753666431239887
-Diff Bands,0.0
-"Diff Bands, Abs",0.0
-Diff Blast,0.0
-Diff Nucleated RBC,0.0
-"Diff, Eosinophil %",0.0
-"Diff, Eosinophil Abs Quant Bld",0.0
-"Diff, Eosinophil Count %",0.0
-"Diff, Eosinophil Count, Abs",0.0
-"Diff, Granulocyte %",0.0
-ETCO2,0.0
-FLACC Pain Scale,0.0
-FiO2,0.0
-GFR/BSA Pred Black SerPl MDRD ArVRat,0.0
-GFR/BSA Pred non black SerPl MDRD ArVRat,0.0
-Glasgow Coma Score,0.0
-"Globulin, Serum",0.002713167697950364
-Glomerular Filtration Rate,0.0
-"Glomerular Filtration Rate, Est",0.0
-Glucose Stick/Meter WBlood POC,0.0
-Glucose WBlood Quant,0.0
-"Glucose, Serum Quant",0.010118500054678396
-HCO3,0.0
-"HCO3, Arterial",0.0
-HR.1,0.0
-HR Apical,0.0
-HR Monitored,0.0
-Hct,0.004882703094132659
-Height,0.010406952548369063
-Hgb,0.0
-Hgb A1C,0.0
-INR Platelet Poor Plasma,0.0
-"Imm Granulocytes Cnt Bld Auto, %",0.0
-"Imm Granulocytes Cnt Bld Auto, Abs",0.0
-International Normalized Ratio,0.002344764598916961
-"Iron, Serum",0.0
-Lactic Acid Blood,0.0
-Lactic Dehydrogenase,0.005485054803132749
-"Lipase, Serum",0.0
-Lymph %,0.0
-Lymph Abs Cnt,0.0
-"Lymphocytes Cnt Bld Auto,%",0.0
-"Lymphocytes Cnt Bld Auto,Abs",0.0
-Lymphocytes NFr Bld Auto,0.0
-MAP,0.0
-MCH Concentration,0.0
-Magnesium,0.0
-"Magnesium, Serum/Plasma",0.0
-Mean Corpuscular Hemoglobin,0.0
-Mean Corpuscular Volume,0.0
-Mean Platelet Volume,0.0
-Mono %,0.0
-Mono Abs Cnt Bld,0.0
-Neutrophil %,0.0
-Neutrophil Abs Bld Cnt,0.0
-Neutrophil Seg,0.0
-"Nucleated RBC Ratio, Blood Auto",0.0
-PCO2,0.0
-"PCO2, Arterial",0.0
-PO2,0.0
-"PO2, Arterial",0.0
-PT,0.0
-PT Time PPP,0.0
-PTT,0.0
-PTT/APTT PPP,0.0
-PaO2,0.0
-Pain Score,0.0
-Peak inspiratory pressure,0.0
-Peep,0.0
-"Phosphorus, Serum",0.0
-Platelet Count,0.01644431964153073
-"Potassium, Serum",0.0
-"Protein Total, Serum",0.0
-Pulse,0.03222060491387334
-Pulse Oximetry,0.0
-Pulse Peripheral,0.0
-QRS Duration,0.0
-QT Interval,0.0
-RBC,0.0
-Red Blood Cell Distribution Width,0.0
-Resp Rt,0.04873272824297822
-Resp Rt Tot,0.0
-SBP,0.02166169444621393
-SO2,0.0
-SPO2,0.0
-SaO2,0.0
-"SaO2 %, Arterial",0.0
-"Sodium, Serum",0.0
-Specific Gravity Urine,0.0
-TCO2,0.0
-Temp,0.0019253467000682257
-Temp Axillary,0.0
-Temp Oral,0.003033556296833667
-Temp Temporal Artery,0.0
-Temp Tympanic,0.0
-Thyroid Stimulating Hormone,0.0
-Tidal Volume,0.0
-"Triglyceride, Serum",0.0
-Troponin I,0.0
-Troponin T S/Pl,0.0
-UA Red Blood Cell,0.0
-UA Urobilinogen,0.0
-UA WBC,0.0
-"Vitamin B12, Serum",0.0
-WBC,0.0
-Weight,0.053909929951681534
-"pH, Arterial",0.0
-"pH, Urine",0.0
-genderandMale,0.032261756939357775
-raceandAfrican American,0.0
-admission_typeandEmergency,0.006792823926279558
-admission_sourceandEmergency Room,0.0
-care_settingandCare Setting Undefined,0.0
-age_grpand70~80,0.0
-raceandCaucasian,0.07159573283296114
-admission_typeandUrgent,0.0
-admission_sourceandPhysician Referral,0.006611552279886211
-care_settingandNeurology,0.0
-age_grpand40~50,0.0
-genderandFemale,0.045499946060622395
-admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0
-care_settingandMedical/Surgical,0.0
-age_grpand>=80,0.0
-admission_typeandElective,0.0
-age_grpand50~60,0.0
-age_grpand60~70,0.0
-admission_sourceandOthers/unknown,0.0
-age_grpand30~40,0.0
-care_settingandIntensive Care Unit,0.0
-admission_sourceandClinic Referral,0.0
-care_settingandOthers/unknown,0.0
-care_settingandSurgery,0.0
-age_grpand20~30,0.0
-raceandOthers/unknown,0.0
-admission_sourceandTransfer from a hospital,0.0
-care_settingandAmbulatory Unit,0.0
-age_grpand<20,0.0045835219912167095
-admission_typeandOthers/unknown,0.0
-admission_typeandTrauma Center,0.0
-raceandAsian,0.0
-care_settingandCardiology,0.0
-care_settingandOrthopedics,0.0
-care_settingandCoronary Care Unit,0.0
-care_settingandStep-Down Unit,0.0
-admission_sourceandTransfer from another health care facility,0.0
-care_settingandStep-Down Unit - Cardiac,0.0
-care_settingandObstetrics,0.0
-care_settingandPhysical Rehabilitation,0.0
-care_settingandGeneral Medicine,0.0
-care_settingandOncology,0.0
-admission_sourceandInformation Not Available,0.0
+feature,mean|SHAP val|,fold
+HR,0.002341358046735526,0
+A/G Ratio,0.0,0
+ALT/SGPT,0.05936060304993018,0
+AST/SGOT,0.0196682924107123,0
+Albumin Quant,0.0,0
+"Albumin, Serum",0.0,0
+"Alk Phos, Serum",0.0011285912018537824,0
+"Amylase, Serum",0.0,0
+Anion Gap,0.0,0
+BMI,0.0032982957502219455,0
+BNP-B Type Natriuretic Peptide,0.0,0
+BUN/Creat Ratio,0.0,0
+Base Excess,0.0,0
+Base Excess Calc,0.0,0
+"Base Excess Calc, Arterial",0.0,0
+Baso %,0.0,0
+Baso Abs,0.0,0
+Baso Abs Cnt Bld,0.0,0
+"Bilirubin Direct, Serum",0.0,0
+Bilirubin Serum Quant,0.0,0
+Bilirubin Total Bld mCnc,0.003782707687000652,0
+Blood Urea Nitrogen,0.0,0
+Body Surface Area,0.011582796631831354,0
+Braden Scale,0.005569242488051637,0
+"CK/CPK, Total, Serum",0.0,0
+CKMB,0.0,0
+CO2,0.0,0
+"CO2 Total, Arterial",0.0,0
+"CO2 Total, Serum",0.011643605643328107,0
+Calcium Ionized,0.0,0
+Calcium Quant,0.03507741507038496,0
+"Calcium, Serum",0.01246242261268841,0
+Chol HDL,0.0,0
+"Chol Total, Serum",0.0,0
+"Cl, Serum",0.014931689078998583,0
+"Creatinine, Serum Quant",0.0040628815570132055,0
+DBP,0.005812953661348545,0
+Diff Bands,0.0,0
+"Diff Bands, Abs",0.0,0
+Diff Blast,0.0,0
+Diff Nucleated RBC,0.0018323190272586155,0
+"Diff, Eosinophil %",0.0,0
+"Diff, Eosinophil Abs Quant Bld",0.0,0
+"Diff, Eosinophil Count %",0.0,0
+"Diff, Eosinophil Count, Abs",0.012318336438916316,0
+"Diff, Granulocyte %",0.0,0
+ETCO2,0.0,0
+FLACC Pain Scale,0.0,0
+FiO2,0.0,0
+GFR/BSA Pred Black SerPl MDRD ArVRat,0.0,0
+GFR/BSA Pred non black SerPl MDRD ArVRat,0.0,0
+Glasgow Coma Score,0.024629279184597144,0
+"Globulin, Serum",0.02223548155758886,0
+Glomerular Filtration Rate,0.0,0
+"Glomerular Filtration Rate, Est",0.0,0
+Glucose Stick/Meter WBlood POC,0.0,0
+Glucose WBlood Quant,0.0,0
+"Glucose, Serum Quant",0.018238209079736223,0
+HCO3,0.0,0
+"HCO3, Arterial",0.0,0
+HR.1,0.0,0
+HR Apical,0.006078304818798838,0
+HR Monitored,0.0,0
+Hct,0.0,0
+Height,0.026244219621023062,0
+Hgb,0.0,0
+Hgb A1C,0.014320084440986685,0
+INR Platelet Poor Plasma,0.0,0
+"Imm Granulocytes Cnt Bld Auto, %",0.0,0
+"Imm Granulocytes Cnt Bld Auto, Abs",0.0,0
+International Normalized Ratio,0.0,0
+"Iron, Serum",0.0,0
+Lactic Acid Blood,0.0,0
+Lactic Dehydrogenase,0.0,0
+"Lipase, Serum",0.0,0
+Lymph %,0.0,0
+Lymph Abs Cnt,0.005017125898561248,0
+"Lymphocytes Cnt Bld Auto,%",0.0,0
+"Lymphocytes Cnt Bld Auto,Abs",0.0,0
+Lymphocytes NFr Bld Auto,0.0,0
+MAP,0.004342405731070832,0
+MCH Concentration,0.0,0
+Magnesium,0.0,0
+"Magnesium, Serum/Plasma",0.0,0
+Mean Corpuscular Hemoglobin,0.0,0
+Mean Corpuscular Volume,0.0,0
+Mean Platelet Volume,0.0,0
+Mono %,0.0,0
+Mono Abs Cnt Bld,0.0,0
+Neutrophil %,0.0,0
+Neutrophil Abs Bld Cnt,0.0,0
+Neutrophil Seg,0.0,0
+"Nucleated RBC Ratio, Blood Auto",0.0,0
+PCO2,0.0,0
+"PCO2, Arterial",0.0,0
+PO2,0.0,0
+"PO2, Arterial",0.0,0
+PT,0.004941679785351009,0
+PT Time PPP,0.0,0
+PTT,0.0,0
+PTT/APTT PPP,0.0,0
+PaO2,0.0,0
+Pain Score,0.004842298023039716,0
+Peak inspiratory pressure,0.0,0
+Peep,0.0,0
+"Phosphorus, Serum",0.0,0
+Platelet Count,0.013559512781349686,0
+"Potassium, Serum",0.0,0
+"Protein Total, Serum",0.0,0
+Pulse,0.03457611548254689,0
+Pulse Oximetry,0.0,0
+Pulse Peripheral,0.0,0
+QRS Duration,0.0,0
+QT Interval,0.0,0
+RBC,0.0,0
+Red Blood Cell Distribution Width,0.0,0
+Resp Rt,0.08838526681457153,0
+Resp Rt Tot,0.0,0
+SBP,0.027706646299256683,0
+SO2,0.0,0
+SPO2,0.0,0
+SaO2,0.0,0
+"SaO2 %, Arterial",0.0,0
+"Sodium, Serum",0.0,0
+Specific Gravity Urine,0.0,0
+TCO2,0.0,0
+Temp,0.008382981599865636,0
+Temp Axillary,0.0,0
+Temp Oral,0.0,0
+Temp Temporal Artery,0.0,0
+Temp Tympanic,0.01936304344130067,0
+Thyroid Stimulating Hormone,0.0,0
+Tidal Volume,0.0,0
+"Triglyceride, Serum",0.0,0
+Troponin I,0.0,0
+Troponin T S/Pl,0.0,0
+UA Red Blood Cell,0.0,0
+UA Urobilinogen,0.0,0
+UA WBC,0.0,0
+"Vitamin B12, Serum",0.0,0
+WBC,0.0,0
+Weight,0.01600194904651815,0
+"pH, Arterial",0.0,0
+"pH, Urine",0.0,0
+genderandMale,0.00473135815889668,0
+raceandAfrican American,0.0,0
+admission_typeandEmergency,0.025919469011280845,0
+admission_sourceandEmergency Room,0.0,0
+care_settingandCare Setting Undefined,0.00393041788846608,0
+age_grpand70~80,0.0,0
+raceandCaucasian,0.003949078864583528,0
+admission_typeandUrgent,0.0,0
+admission_sourceandPhysician Referral,0.0,0
+care_settingandNeurology,0.0,0
+age_grpand40~50,0.0,0
+genderandFemale,0.08598416965927728,0
+admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0,0
+care_settingandMedical/Surgical,0.0,0
+age_grpand>=80,0.0,0
+admission_typeandElective,0.0,0
+age_grpand50~60,0.0,0
+age_grpand60~70,0.0,0
+admission_sourceandOthers/unknown,0.0,0
+age_grpand30~40,0.0,0
+care_settingandIntensive Care Unit,0.0,0
+admission_sourceandClinic Referral,0.0,0
+care_settingandOthers/unknown,0.0,0
+care_settingandSurgery,0.0,0
+age_grpand20~30,0.0,0
+raceandOthers/unknown,0.0,0
+admission_sourceandTransfer from a hospital,0.0013909019553085987,0
+care_settingandAmbulatory Unit,0.0,0
+age_grpand<20,0.0,0
+admission_typeandOthers/unknown,0.0,0
+admission_typeandTrauma Center,0.011091294339523473,0
+raceandAsian,0.0,0
+care_settingandCardiology,0.0,0
+care_settingandOrthopedics,0.0,0
+care_settingandCoronary Care Unit,0.0,0
+care_settingandStep-Down Unit,0.0,0
+admission_sourceandTransfer from another health care facility,0.0,0
+care_settingandStep-Down Unit - Cardiac,0.0,0
+care_settingandObstetrics,0.0,0
+care_settingandPhysical Rehabilitation,0.0,0
+care_settingandGeneral Medicine,0.0,0
+care_settingandOncology,0.0,0
+admission_sourceandInformation Not Available,0.0,0
+HR,0.02892641102982496,1
+A/G Ratio,0.0,1
+ALT/SGPT,0.0016203691967987461,1
+AST/SGOT,0.0,1
+Albumin Quant,0.0,1
+"Albumin, Serum",0.0,1
+"Alk Phos, Serum",0.0,1
+"Amylase, Serum",0.0,1
+Anion Gap,0.0,1
+BMI,0.0,1
+BNP-B Type Natriuretic Peptide,0.0,1
+BUN/Creat Ratio,0.0,1
+Base Excess,0.0,1
+Base Excess Calc,0.0,1
+"Base Excess Calc, Arterial",0.0,1
+Baso %,0.0,1
+Baso Abs,0.0016658623316759865,1
+Baso Abs Cnt Bld,0.0,1
+"Bilirubin Direct, Serum",0.0,1
+Bilirubin Serum Quant,0.0,1
+Bilirubin Total Bld mCnc,0.0,1
+Blood Urea Nitrogen,0.005251944375125514,1
+Body Surface Area,0.0010057329133209775,1
+Braden Scale,0.04417306896297661,1
+"CK/CPK, Total, Serum",0.0,1
+CKMB,0.0,1
+CO2,0.0,1
+"CO2 Total, Arterial",0.0,1
+"CO2 Total, Serum",0.0,1
+Calcium Ionized,0.0,1
+Calcium Quant,0.0,1
+"Calcium, Serum",0.020463056721805654,1
+Chol HDL,0.0,1
+"Chol Total, Serum",0.0,1
+"Cl, Serum",0.0,1
+"Creatinine, Serum Quant",0.0,1
+DBP,0.0,1
+Diff Bands,0.0,1
+"Diff Bands, Abs",0.0,1
+Diff Blast,0.0,1
+Diff Nucleated RBC,0.0,1
+"Diff, Eosinophil %",0.0,1
+"Diff, Eosinophil Abs Quant Bld",0.0,1
+"Diff, Eosinophil Count %",0.0,1
+"Diff, Eosinophil Count, Abs",0.0,1
+"Diff, Granulocyte %",0.0,1
+ETCO2,0.0,1
+FLACC Pain Scale,0.0,1
+FiO2,0.0,1
+GFR/BSA Pred Black SerPl MDRD ArVRat,0.0,1
+GFR/BSA Pred non black SerPl MDRD ArVRat,0.0,1
+Glasgow Coma Score,0.016632330142179165,1
+"Globulin, Serum",0.0027833360855205502,1
+Glomerular Filtration Rate,0.0,1
+"Glomerular Filtration Rate, Est",0.0,1
+Glucose Stick/Meter WBlood POC,0.0,1
+Glucose WBlood Quant,0.0,1
+"Glucose, Serum Quant",0.13498339845335827,1
+HCO3,0.0,1
+"HCO3, Arterial",0.0,1
+HR.1,0.0,1
+HR Apical,0.0,1
+HR Monitored,0.0,1
+Hct,0.0026481820349338893,1
+Height,0.0,1
+Hgb,0.0,1
+Hgb A1C,0.0,1
+INR Platelet Poor Plasma,0.0,1
+"Imm Granulocytes Cnt Bld Auto, %",0.0,1
+"Imm Granulocytes Cnt Bld Auto, Abs",0.0,1
+International Normalized Ratio,0.004079954469908823,1
+"Iron, Serum",0.0,1
+Lactic Acid Blood,0.0,1
+Lactic Dehydrogenase,0.00890613484371877,1
+"Lipase, Serum",0.0,1
+Lymph %,0.0,1
+Lymph Abs Cnt,0.0,1
+"Lymphocytes Cnt Bld Auto,%",0.0,1
+"Lymphocytes Cnt Bld Auto,Abs",0.0,1
+Lymphocytes NFr Bld Auto,0.0,1
+MAP,0.008690140918664114,1
+MCH Concentration,0.0,1
+Magnesium,0.0,1
+"Magnesium, Serum/Plasma",0.0,1
+Mean Corpuscular Hemoglobin,0.0,1
+Mean Corpuscular Volume,0.0,1
+Mean Platelet Volume,0.02347175356318141,1
+Mono %,0.0,1
+Mono Abs Cnt Bld,0.0,1
+Neutrophil %,0.0,1
+Neutrophil Abs Bld Cnt,0.0,1
+Neutrophil Seg,0.0,1
+"Nucleated RBC Ratio, Blood Auto",0.0,1
+PCO2,0.0,1
+"PCO2, Arterial",0.0,1
+PO2,0.0,1
+"PO2, Arterial",0.0,1
+PT,0.0,1
+PT Time PPP,0.0,1
+PTT,0.0,1
+PTT/APTT PPP,0.0,1
+PaO2,0.0,1
+Pain Score,0.00806154634985494,1
+Peak inspiratory pressure,0.0,1
+Peep,0.0,1
+"Phosphorus, Serum",0.0,1
+Platelet Count,0.01937962543087169,1
+"Potassium, Serum",0.003740460341846558,1
+"Protein Total, Serum",0.0,1
+Pulse,0.0052317604942786755,1
+Pulse Oximetry,0.0,1
+Pulse Peripheral,0.0,1
+QRS Duration,0.0,1
+QT Interval,0.0,1
+RBC,0.0,1
+Red Blood Cell Distribution Width,0.0,1
+Resp Rt,0.05111705246787694,1
+Resp Rt Tot,0.0,1
+SBP,0.009442587637292842,1
+SO2,0.0,1
+SPO2,0.0007547854878402386,1
+SaO2,0.0,1
+"SaO2 %, Arterial",0.0,1
+"Sodium, Serum",0.005676997253450297,1
+Specific Gravity Urine,0.0,1
+TCO2,0.0,1
+Temp,0.0,1
+Temp Axillary,0.0,1
+Temp Oral,0.0020982828965398657,1
+Temp Temporal Artery,0.0,1
+Temp Tympanic,0.0,1
+Thyroid Stimulating Hormone,0.0,1
+Tidal Volume,0.0,1
+"Triglyceride, Serum",0.0,1
+Troponin I,0.0,1
+Troponin T S/Pl,0.0,1
+UA Red Blood Cell,0.0,1
+UA Urobilinogen,0.0,1
+UA WBC,0.0,1
+"Vitamin B12, Serum",0.0,1
+WBC,0.007514037903152085,1
+Weight,0.0,1
+"pH, Arterial",0.0,1
+"pH, Urine",0.0,1
+genderandMale,0.0016967042321597951,1
+raceandAfrican American,0.0,1
+admission_typeandEmergency,0.009586067595929339,1
+admission_sourceandEmergency Room,0.0,1
+care_settingandCare Setting Undefined,0.014209525987882821,1
+age_grpand70~80,0.0,1
+raceandCaucasian,0.023338003962473427,1
+admission_typeandUrgent,0.0,1
+admission_sourceandPhysician Referral,0.013286077430963408,1
+care_settingandNeurology,0.0,1
+age_grpand40~50,0.0,1
+genderandFemale,0.09565808868240558,1
+admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0,1
+care_settingandMedical/Surgical,0.0,1
+age_grpand>=80,0.0,1
+admission_typeandElective,0.0,1
+age_grpand50~60,0.0,1
+age_grpand60~70,0.0,1
+admission_sourceandOthers/unknown,0.0,1
+age_grpand30~40,0.0,1
+care_settingandIntensive Care Unit,0.0,1
+admission_sourceandClinic Referral,0.0,1
+care_settingandOthers/unknown,0.0,1
+care_settingandSurgery,0.0,1
+age_grpand20~30,0.0,1
+raceandOthers/unknown,0.0,1
+admission_sourceandTransfer from a hospital,0.0,1
+care_settingandAmbulatory Unit,0.0,1
+age_grpand<20,0.0,1
+admission_typeandOthers/unknown,0.0,1
+admission_typeandTrauma Center,0.0,1
+raceandAsian,0.0,1
+care_settingandCardiology,0.0,1
+care_settingandOrthopedics,0.0,1
+care_settingandCoronary Care Unit,0.0,1
+care_settingandStep-Down Unit,0.0,1
+admission_sourceandTransfer from another health care facility,0.0,1
+care_settingandStep-Down Unit - Cardiac,0.0,1
+care_settingandObstetrics,0.0,1
+care_settingandPhysical Rehabilitation,0.0,1
+care_settingandGeneral Medicine,0.0,1
+care_settingandOncology,0.0,1
+admission_sourceandInformation Not Available,0.0,1
+HR,0.00865568626355844,2
+A/G Ratio,0.0,2
+ALT/SGPT,0.03850370966113863,2
+AST/SGOT,0.0,2
+Albumin Quant,0.0,2
+"Albumin, Serum",0.0,2
+"Alk Phos, Serum",0.0,2
+"Amylase, Serum",0.0,2
+Anion Gap,0.0,2
+BMI,0.0214996569536793,2
+BNP-B Type Natriuretic Peptide,0.0,2
+BUN/Creat Ratio,0.0,2
+Base Excess,0.0,2
+Base Excess Calc,0.0,2
+"Base Excess Calc, Arterial",0.0,2
+Baso %,0.0,2
+Baso Abs,0.0014553169501790157,2
+Baso Abs Cnt Bld,0.0,2
+"Bilirubin Direct, Serum",0.00923579092623716,2
+Bilirubin Serum Quant,0.0,2
+Bilirubin Total Bld mCnc,0.0,2
+Blood Urea Nitrogen,0.0,2
+Body Surface Area,0.012471759675444746,2
+Braden Scale,0.0,2
+"CK/CPK, Total, Serum",0.0,2
+CKMB,0.0,2
+CO2,0.0,2
+"CO2 Total, Arterial",0.0,2
+"CO2 Total, Serum",0.01259108281763433,2
+Calcium Ionized,0.0,2
+Calcium Quant,0.0,2
+"Calcium, Serum",0.023662708813867832,2
+Chol HDL,0.0,2
+"Chol Total, Serum",0.0,2
+"Cl, Serum",0.0,2
+"Creatinine, Serum Quant",0.0,2
+DBP,0.020506262392746676,2
+Diff Bands,0.0,2
+"Diff Bands, Abs",0.0,2
+Diff Blast,0.0,2
+Diff Nucleated RBC,0.0,2
+"Diff, Eosinophil %",0.0,2
+"Diff, Eosinophil Abs Quant Bld",0.0,2
+"Diff, Eosinophil Count %",0.0,2
+"Diff, Eosinophil Count, Abs",0.0163109105400541,2
+"Diff, Granulocyte %",0.0,2
+ETCO2,0.0,2
+FLACC Pain Scale,0.0,2
+FiO2,0.0,2
+GFR/BSA Pred Black SerPl MDRD ArVRat,0.0,2
+GFR/BSA Pred non black SerPl MDRD ArVRat,0.0,2
+Glasgow Coma Score,0.009277207248350117,2
+"Globulin, Serum",0.057499328940641005,2
+Glomerular Filtration Rate,0.0,2
+"Glomerular Filtration Rate, Est",0.0,2
+Glucose Stick/Meter WBlood POC,0.0,2
+Glucose WBlood Quant,0.0,2
+"Glucose, Serum Quant",0.004695060580137321,2
+HCO3,0.0,2
+"HCO3, Arterial",0.0,2
+HR.1,0.0,2
+HR Apical,0.0,2
+HR Monitored,0.0,2
+Hct,0.0,2
+Height,0.0010643684187998516,2
+Hgb,0.0,2
+Hgb A1C,0.0018354513562129193,2
+INR Platelet Poor Plasma,0.0,2
+"Imm Granulocytes Cnt Bld Auto, %",0.0,2
+"Imm Granulocytes Cnt Bld Auto, Abs",0.0,2
+International Normalized Ratio,0.00044984571240465376,2
+"Iron, Serum",0.0,2
+Lactic Acid Blood,0.005914431192278053,2
+Lactic Dehydrogenase,0.016537781278483203,2
+"Lipase, Serum",0.0,2
+Lymph %,0.02793158713140263,2
+Lymph Abs Cnt,0.0,2
+"Lymphocytes Cnt Bld Auto,%",0.0,2
+"Lymphocytes Cnt Bld Auto,Abs",0.0,2
+Lymphocytes NFr Bld Auto,0.0,2
+MAP,0.002796829836735365,2
+MCH Concentration,0.0,2
+Magnesium,0.0,2
+"Magnesium, Serum/Plasma",0.0,2
+Mean Corpuscular Hemoglobin,0.011607416555755343,2
+Mean Corpuscular Volume,0.0,2
+Mean Platelet Volume,0.0,2
+Mono %,0.0,2
+Mono Abs Cnt Bld,0.0,2
+Neutrophil %,0.0,2
+Neutrophil Abs Bld Cnt,0.0,2
+Neutrophil Seg,0.0,2
+"Nucleated RBC Ratio, Blood Auto",0.0,2
+PCO2,0.0,2
+"PCO2, Arterial",0.0,2
+PO2,0.0,2
+"PO2, Arterial",0.0,2
+PT,0.0,2
+PT Time PPP,0.0,2
+PTT,0.0,2
+PTT/APTT PPP,0.0,2
+PaO2,0.0,2
+Pain Score,0.030470024150564455,2
+Peak inspiratory pressure,0.0,2
+Peep,0.0,2
+"Phosphorus, Serum",0.0,2
+Platelet Count,0.01196246069711199,2
+"Potassium, Serum",0.0,2
+"Protein Total, Serum",0.0,2
+Pulse,0.022715682193666178,2
+Pulse Oximetry,0.0,2
+Pulse Peripheral,0.0,2
+QRS Duration,0.0,2
+QT Interval,0.0,2
+RBC,0.0039844585675810635,2
+Red Blood Cell Distribution Width,0.0,2
+Resp Rt,0.03276158640717097,2
+Resp Rt Tot,0.0,2
+SBP,0.04801120855963927,2
+SO2,0.0,2
+SPO2,0.0,2
+SaO2,0.0,2
+"SaO2 %, Arterial",0.0,2
+"Sodium, Serum",0.0,2
+Specific Gravity Urine,0.0,2
+TCO2,0.0,2
+Temp,0.024922357871028953,2
+Temp Axillary,0.0,2
+Temp Oral,0.0,2
+Temp Temporal Artery,0.0,2
+Temp Tympanic,0.0,2
+Thyroid Stimulating Hormone,0.0,2
+Tidal Volume,0.0,2
+"Triglyceride, Serum",0.0,2
+Troponin I,0.0,2
+Troponin T S/Pl,0.0,2
+UA Red Blood Cell,0.0,2
+UA Urobilinogen,0.0,2
+UA WBC,0.0,2
+"Vitamin B12, Serum",0.0,2
+WBC,0.0,2
+Weight,0.021943426796307893,2
+"pH, Arterial",0.0,2
+"pH, Urine",0.0,2
+genderandMale,0.00454515437199379,2
+raceandAfrican American,0.0,2
+admission_typeandEmergency,0.004503075765624332,2
+admission_sourceandEmergency Room,0.0,2
+care_settingandCare Setting Undefined,0.004521745662716637,2
+age_grpand70~80,0.0,2
+raceandCaucasian,0.03218707631342536,2
+admission_typeandUrgent,0.0,2
+admission_sourceandPhysician Referral,0.005050277032748065,2
+care_settingandNeurology,0.0,2
+age_grpand40~50,0.0,2
+genderandFemale,0.018999181293273822,2
+admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0,2
+care_settingandMedical/Surgical,0.0,2
+age_grpand>=80,0.0,2
+admission_typeandElective,0.0,2
+age_grpand50~60,0.001484068782048543,2
+age_grpand60~70,0.017774282932980452,2
+admission_sourceandOthers/unknown,0.0,2
+age_grpand30~40,0.0,2
+care_settingandIntensive Care Unit,0.0,2
+admission_sourceandClinic Referral,0.0,2
+care_settingandOthers/unknown,0.0,2
+care_settingandSurgery,0.0,2
+age_grpand20~30,0.005042357605647804,2
+raceandOthers/unknown,0.0,2
+admission_sourceandTransfer from a hospital,0.0,2
+care_settingandAmbulatory Unit,0.0,2
+age_grpand<20,0.030272551554503237,2
+admission_typeandOthers/unknown,0.0,2
+admission_typeandTrauma Center,0.0,2
+raceandAsian,0.0,2
+care_settingandCardiology,0.0022963581421035564,2
+care_settingandOrthopedics,0.0,2
+care_settingandCoronary Care Unit,0.0,2
+care_settingandStep-Down Unit,0.0,2
+admission_sourceandTransfer from another health care facility,0.0,2
+care_settingandStep-Down Unit - Cardiac,0.0,2
+care_settingandObstetrics,0.0,2
+care_settingandPhysical Rehabilitation,0.0,2
+care_settingandGeneral Medicine,0.0,2
+care_settingandOncology,0.0,2
+admission_sourceandInformation Not Available,0.0,2
+HR,0.0,3
+A/G Ratio,0.0,3
+ALT/SGPT,0.006840027986387253,3
+AST/SGOT,0.003917176513408777,3
+Albumin Quant,0.0,3
+"Albumin, Serum",0.0,3
+"Alk Phos, Serum",0.0,3
+"Amylase, Serum",0.0,3
+Anion Gap,0.0,3
+BMI,0.0008025549819998059,3
+BNP-B Type Natriuretic Peptide,0.0,3
+BUN/Creat Ratio,0.0,3
+Base Excess,0.0,3
+Base Excess Calc,0.0,3
+"Base Excess Calc, Arterial",0.0,3
+Baso %,0.0,3
+Baso Abs,0.002694136412057561,3
+Baso Abs Cnt Bld,0.0,3
+"Bilirubin Direct, Serum",0.0,3
+Bilirubin Serum Quant,0.0,3
+Bilirubin Total Bld mCnc,0.0027664251988578368,3
+Blood Urea Nitrogen,0.0,3
+Body Surface Area,0.005165952380425287,3
+Braden Scale,0.006810653783996905,3
+"CK/CPK, Total, Serum",0.0,3
+CKMB,0.0,3
+CO2,0.00157466838431723,3
+"CO2 Total, Arterial",0.0,3
+"CO2 Total, Serum",0.06367908670045999,3
+Calcium Ionized,0.0,3
+Calcium Quant,0.0,3
+"Calcium, Serum",0.06384928517249319,3
+Chol HDL,0.0,3
+"Chol Total, Serum",0.0,3
+"Cl, Serum",0.0,3
+"Creatinine, Serum Quant",0.0,3
+DBP,0.027220159285679817,3
+Diff Bands,0.0,3
+"Diff Bands, Abs",0.0,3
+Diff Blast,0.0,3
+Diff Nucleated RBC,0.0,3
+"Diff, Eosinophil %",0.0,3
+"Diff, Eosinophil Abs Quant Bld",0.0,3
+"Diff, Eosinophil Count %",0.0,3
+"Diff, Eosinophil Count, Abs",0.019352232028875718,3
+"Diff, Granulocyte %",0.0,3
+ETCO2,0.0,3
+FLACC Pain Scale,0.0,3
+FiO2,0.0,3
+GFR/BSA Pred Black SerPl MDRD ArVRat,0.0,3
+GFR/BSA Pred non black SerPl MDRD ArVRat,0.0,3
+Glasgow Coma Score,0.009440934609473015,3
+"Globulin, Serum",0.0,3
+Glomerular Filtration Rate,0.0,3
+"Glomerular Filtration Rate, Est",0.0,3
+Glucose Stick/Meter WBlood POC,0.0,3
+Glucose WBlood Quant,0.0,3
+"Glucose, Serum Quant",0.0,3
+HCO3,0.0,3
+"HCO3, Arterial",0.0,3
+HR.1,0.0,3
+HR Apical,0.0,3
+HR Monitored,0.0,3
+Hct,0.0,3
+Height,0.0026761856992961837,3
+Hgb,0.0,3
+Hgb A1C,0.004564181928839079,3
+INR Platelet Poor Plasma,0.0,3
+"Imm Granulocytes Cnt Bld Auto, %",0.0,3
+"Imm Granulocytes Cnt Bld Auto, Abs",0.0,3
+International Normalized Ratio,0.0,3
+"Iron, Serum",0.0,3
+Lactic Acid Blood,0.0,3
+Lactic Dehydrogenase,0.0,3
+"Lipase, Serum",0.0,3
+Lymph %,0.0,3
+Lymph Abs Cnt,0.0,3
+"Lymphocytes Cnt Bld Auto,%",0.0,3
+"Lymphocytes Cnt Bld Auto,Abs",0.0,3
+Lymphocytes NFr Bld Auto,0.0,3
+MAP,0.0,3
+MCH Concentration,0.0,3
+Magnesium,0.0,3
+"Magnesium, Serum/Plasma",0.0,3
+Mean Corpuscular Hemoglobin,0.0,3
+Mean Corpuscular Volume,0.0,3
+Mean Platelet Volume,0.033475454585969365,3
+Mono %,0.0,3
+Mono Abs Cnt Bld,0.0,3
+Neutrophil %,0.0,3
+Neutrophil Abs Bld Cnt,0.0022376844427442833,3
+Neutrophil Seg,0.0,3
+"Nucleated RBC Ratio, Blood Auto",0.0,3
+PCO2,0.0,3
+"PCO2, Arterial",0.0,3
+PO2,0.0,3
+"PO2, Arterial",0.0,3
+PT,0.0,3
+PT Time PPP,0.0,3
+PTT,0.0,3
+PTT/APTT PPP,0.0,3
+PaO2,0.0,3
+Pain Score,0.0074553916165337394,3
+Peak inspiratory pressure,0.0,3
+Peep,0.0,3
+"Phosphorus, Serum",0.0,3
+Platelet Count,0.004869253951391992,3
+"Potassium, Serum",0.0,3
+"Protein Total, Serum",0.0,3
+Pulse,0.010904347151422243,3
+Pulse Oximetry,0.0,3
+Pulse Peripheral,0.0,3
+QRS Duration,0.0,3
+QT Interval,0.0,3
+RBC,0.0,3
+Red Blood Cell Distribution Width,0.0,3
+Resp Rt,0.07920729218374073,3
+Resp Rt Tot,0.0,3
+SBP,0.005377112689742504,3
+SO2,0.0,3
+SPO2,0.0,3
+SaO2,0.0,3
+"SaO2 %, Arterial",0.0,3
+"Sodium, Serum",0.0,3
+Specific Gravity Urine,0.0,3
+TCO2,0.0,3
+Temp,0.0,3
+Temp Axillary,0.0,3
+Temp Oral,0.0,3
+Temp Temporal Artery,0.0,3
+Temp Tympanic,0.0,3
+Thyroid Stimulating Hormone,0.0,3
+Tidal Volume,0.0,3
+"Triglyceride, Serum",0.0,3
+Troponin I,0.0,3
+Troponin T S/Pl,0.0,3
+UA Red Blood Cell,0.0,3
+UA Urobilinogen,0.0,3
+UA WBC,0.0,3
+"Vitamin B12, Serum",0.0,3
+WBC,0.0,3
+Weight,0.05706373226324403,3
+"pH, Arterial",0.0,3
+"pH, Urine",0.0,3
+genderandMale,0.0,3
+raceandAfrican American,0.0,3
+admission_typeandEmergency,0.0,3
+admission_sourceandEmergency Room,0.0,3
+care_settingandCare Setting Undefined,0.0,3
+age_grpand70~80,0.0,3
+raceandCaucasian,0.03221478845456828,3
+admission_typeandUrgent,0.0,3
+admission_sourceandPhysician Referral,0.0197229168026169,3
+care_settingandNeurology,0.0,3
+age_grpand40~50,0.0,3
+genderandFemale,0.0686658218915612,3
+admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0,3
+care_settingandMedical/Surgical,0.0,3
+age_grpand>=80,0.0,3
+admission_typeandElective,0.0,3
+age_grpand50~60,0.0,3
+age_grpand60~70,0.0,3
+admission_sourceandOthers/unknown,0.0,3
+age_grpand30~40,0.0,3
+care_settingandIntensive Care Unit,0.0,3
+admission_sourceandClinic Referral,0.0,3
+care_settingandOthers/unknown,0.0,3
+care_settingandSurgery,0.0,3
+age_grpand20~30,0.0,3
+raceandOthers/unknown,0.0,3
+admission_sourceandTransfer from a hospital,0.0,3
+care_settingandAmbulatory Unit,0.0,3
+age_grpand<20,0.021524900484437358,3
+admission_typeandOthers/unknown,0.0,3
+admission_typeandTrauma Center,0.0,3
+raceandAsian,0.0,3
+care_settingandCardiology,0.002306852679019077,3
+care_settingandOrthopedics,0.0,3
+care_settingandCoronary Care Unit,0.0,3
+care_settingandStep-Down Unit,0.0,3
+admission_sourceandTransfer from another health care facility,0.0,3
+care_settingandStep-Down Unit - Cardiac,0.0,3
+care_settingandObstetrics,0.0,3
+care_settingandPhysical Rehabilitation,0.0,3
+care_settingandGeneral Medicine,0.0,3
+care_settingandOncology,0.0,3
+admission_sourceandInformation Not Available,0.0,3
+HR,0.032919024819263995,4
+A/G Ratio,0.0,4
+ALT/SGPT,0.022241201146217505,4
+AST/SGOT,0.01755477514003744,4
+Albumin Quant,0.0010773962878791443,4
+"Albumin, Serum",0.0,4
+"Alk Phos, Serum",0.008954753321083085,4
+"Amylase, Serum",0.0,4
+Anion Gap,0.014953413676416916,4
+BMI,0.0,4
+BNP-B Type Natriuretic Peptide,0.0,4
+BUN/Creat Ratio,0.0,4
+Base Excess,0.0,4
+Base Excess Calc,0.0,4
+"Base Excess Calc, Arterial",0.0,4
+Baso %,0.0,4
+Baso Abs,0.006058694335723934,4
+Baso Abs Cnt Bld,0.0,4
+"Bilirubin Direct, Serum",0.006941290472089426,4
+Bilirubin Serum Quant,0.0,4
+Bilirubin Total Bld mCnc,0.0,4
+Blood Urea Nitrogen,0.0,4
+Body Surface Area,0.0,4
+Braden Scale,0.005719906417622114,4
+"CK/CPK, Total, Serum",0.0,4
+CKMB,0.0,4
+CO2,0.012616997353709494,4
+"CO2 Total, Arterial",0.0,4
+"CO2 Total, Serum",0.0,4
+Calcium Ionized,0.0,4
+Calcium Quant,0.0,4
+"Calcium, Serum",0.020562106985083962,4
+Chol HDL,0.0,4
+"Chol Total, Serum",0.0,4
+"Cl, Serum",0.0,4
+"Creatinine, Serum Quant",0.0,4
+DBP,0.005753666431239887,4
+Diff Bands,0.0,4
+"Diff Bands, Abs",0.0,4
+Diff Blast,0.0,4
+Diff Nucleated RBC,0.0,4
+"Diff, Eosinophil %",0.0,4
+"Diff, Eosinophil Abs Quant Bld",0.0,4
+"Diff, Eosinophil Count %",0.0,4
+"Diff, Eosinophil Count, Abs",0.0,4
+"Diff, Granulocyte %",0.0,4
+ETCO2,0.0,4
+FLACC Pain Scale,0.0,4
+FiO2,0.0,4
+GFR/BSA Pred Black SerPl MDRD ArVRat,0.0,4
+GFR/BSA Pred non black SerPl MDRD ArVRat,0.0,4
+Glasgow Coma Score,0.0,4
+"Globulin, Serum",0.002713167697950364,4
+Glomerular Filtration Rate,0.0,4
+"Glomerular Filtration Rate, Est",0.0,4
+Glucose Stick/Meter WBlood POC,0.0,4
+Glucose WBlood Quant,0.0,4
+"Glucose, Serum Quant",0.010118500054678396,4
+HCO3,0.0,4
+"HCO3, Arterial",0.0,4
+HR.1,0.0,4
+HR Apical,0.0,4
+HR Monitored,0.0,4
+Hct,0.004882703094132659,4
+Height,0.010406952548369063,4
+Hgb,0.0,4
+Hgb A1C,0.0,4
+INR Platelet Poor Plasma,0.0,4
+"Imm Granulocytes Cnt Bld Auto, %",0.0,4
+"Imm Granulocytes Cnt Bld Auto, Abs",0.0,4
+International Normalized Ratio,0.002344764598916961,4
+"Iron, Serum",0.0,4
+Lactic Acid Blood,0.0,4
+Lactic Dehydrogenase,0.005485054803132749,4
+"Lipase, Serum",0.0,4
+Lymph %,0.0,4
+Lymph Abs Cnt,0.0,4
+"Lymphocytes Cnt Bld Auto,%",0.0,4
+"Lymphocytes Cnt Bld Auto,Abs",0.0,4
+Lymphocytes NFr Bld Auto,0.0,4
+MAP,0.0,4
+MCH Concentration,0.0,4
+Magnesium,0.0,4
+"Magnesium, Serum/Plasma",0.0,4
+Mean Corpuscular Hemoglobin,0.0,4
+Mean Corpuscular Volume,0.0,4
+Mean Platelet Volume,0.0,4
+Mono %,0.0,4
+Mono Abs Cnt Bld,0.0,4
+Neutrophil %,0.0,4
+Neutrophil Abs Bld Cnt,0.0,4
+Neutrophil Seg,0.0,4
+"Nucleated RBC Ratio, Blood Auto",0.0,4
+PCO2,0.0,4
+"PCO2, Arterial",0.0,4
+PO2,0.0,4
+"PO2, Arterial",0.0,4
+PT,0.0,4
+PT Time PPP,0.0,4
+PTT,0.0,4
+PTT/APTT PPP,0.0,4
+PaO2,0.0,4
+Pain Score,0.0,4
+Peak inspiratory pressure,0.0,4
+Peep,0.0,4
+"Phosphorus, Serum",0.0,4
+Platelet Count,0.01644431964153073,4
+"Potassium, Serum",0.0,4
+"Protein Total, Serum",0.0,4
+Pulse,0.03222060491387334,4
+Pulse Oximetry,0.0,4
+Pulse Peripheral,0.0,4
+QRS Duration,0.0,4
+QT Interval,0.0,4
+RBC,0.0,4
+Red Blood Cell Distribution Width,0.0,4
+Resp Rt,0.04873272824297822,4
+Resp Rt Tot,0.0,4
+SBP,0.02166169444621393,4
+SO2,0.0,4
+SPO2,0.0,4
+SaO2,0.0,4
+"SaO2 %, Arterial",0.0,4
+"Sodium, Serum",0.0,4
+Specific Gravity Urine,0.0,4
+TCO2,0.0,4
+Temp,0.0019253467000682257,4
+Temp Axillary,0.0,4
+Temp Oral,0.003033556296833667,4
+Temp Temporal Artery,0.0,4
+Temp Tympanic,0.0,4
+Thyroid Stimulating Hormone,0.0,4
+Tidal Volume,0.0,4
+"Triglyceride, Serum",0.0,4
+Troponin I,0.0,4
+Troponin T S/Pl,0.0,4
+UA Red Blood Cell,0.0,4
+UA Urobilinogen,0.0,4
+UA WBC,0.0,4
+"Vitamin B12, Serum",0.0,4
+WBC,0.0,4
+Weight,0.053909929951681534,4
+"pH, Arterial",0.0,4
+"pH, Urine",0.0,4
+genderandMale,0.032261756939357775,4
+raceandAfrican American,0.0,4
+admission_typeandEmergency,0.006792823926279558,4
+admission_sourceandEmergency Room,0.0,4
+care_settingandCare Setting Undefined,0.0,4
+age_grpand70~80,0.0,4
+raceandCaucasian,0.07159573283296114,4
+admission_typeandUrgent,0.0,4
+admission_sourceandPhysician Referral,0.006611552279886211,4
+care_settingandNeurology,0.0,4
+age_grpand40~50,0.0,4
+genderandFemale,0.045499946060622395,4
+admission_sourceandTransfer from a Skilled Nursing Facility (SNF),0.0,4
+care_settingandMedical/Surgical,0.0,4
+age_grpand>=80,0.0,4
+admission_typeandElective,0.0,4
+age_grpand50~60,0.0,4
+age_grpand60~70,0.0,4
+admission_sourceandOthers/unknown,0.0,4
+age_grpand30~40,0.0,4
+care_settingandIntensive Care Unit,0.0,4
+admission_sourceandClinic Referral,0.0,4
+care_settingandOthers/unknown,0.0,4
+care_settingandSurgery,0.0,4
+age_grpand20~30,0.0,4
+raceandOthers/unknown,0.0,4
+admission_sourceandTransfer from a hospital,0.0,4
+care_settingandAmbulatory Unit,0.0,4
+age_grpand<20,0.0045835219912167095,4
+admission_typeandOthers/unknown,0.0,4
+admission_typeandTrauma Center,0.0,4
+raceandAsian,0.0,4
+care_settingandCardiology,0.0,4
+care_settingandOrthopedics,0.0,4
+care_settingandCoronary Care Unit,0.0,4
+care_settingandStep-Down Unit,0.0,4
+admission_sourceandTransfer from another health care facility,0.0,4
+care_settingandStep-Down Unit - Cardiac,0.0,4
+care_settingandObstetrics,0.0,4
+care_settingandPhysical Rehabilitation,0.0,4
+care_settingandGeneral Medicine,0.0,4
+care_settingandOncology,0.0,4
+admission_sourceandInformation Not Available,0.0,4

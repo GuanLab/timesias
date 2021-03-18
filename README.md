@@ -23,7 +23,7 @@ The example data in the data/ are randomly generated data for the demonstration 
 Two types of data is requied for model training and prediction:
 * `gs.file`: `.txt` file two columns. The first column if file name index. The second column is the gold standard (0/1), representing the final outbreak of sepsis
 
-``` r
+``` 
 0.psv,1
 1.psv,1
 2.psv,0
@@ -36,23 +36,36 @@ Two types of data is requied for model training and prediction:
 * `*.psv`: `.psv` table files separated by `|`, which is the time-series feature records.
 	The header of psv file are the feature names. To note, the first column is the time index.
 
-``` r
-HR feature_1 feature_2 ... feature_n-1 feature_n
-0.0 1 0.0 ... 1.3 0.0 
-1.0 NaN 0.0 ... 0.0 0.0
-3.5 NaN 2.3 ... 0.0 0.0
+``` 
+HR|feature_1|feature_2|...|feature_n-1|feature_n
+0.0|1|0.0|...|1.3|0.0 
+1.0|NaN|0.0|...|0.0|0.0
+3.5|NaN|2.3|...|0.0|0.0
 ```
 ## Model training and cross validation
 ``` r
 python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES] --shap
 ```
-* `GS_FILE_PATH`: the path to gold-standards and file path file;
-* `LAST_N_RECORDS`: last n records used for prediction. defulat: 16;
-* `EXTRA_FEATURES`: addtional features used for prediction. defualt: all features we used in DII Data challenge.
 
-This will generate models, which will be saved under a new directory `./models`
+* `GS_FILE_PATH`: the path to the gold-standard file; for example, `/data/gs.file`;
+* `LAST_N_RECORDS`: last n records to use for prediction. default: 16;
+* `EXTRA_FEATURES`: addtional features used for prediction. default: ['norm', 'std', 'missing_portion', 'baseline'], which are all features we used in DII Data challenge.
+
+also use
+
+```r
+ python main.py --help
+```
+to get instructions on the usage of our program.
+
+
+This will generate models, which will be saved under a new directory `./models`.
+
+Evaluation results during five-fold cross validation will be stored in `eva.tsv`.
+
 
 # Top feature evaluation
+
 if `--shap` is indicated, SHAP analysis to show top contributing  measurements and last n time points.
 
 ![](top_feature_report_example.png)

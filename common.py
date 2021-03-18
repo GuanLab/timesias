@@ -108,6 +108,8 @@ def five_fold_cv(gs_filepath, n, f, shap):
         # SHAP
         if shap:
             feature_shap, t_shap = shap_analysis(gbm, test_matrix, f_names)
+            feature_shap['fold'] = i
+            t_shap['fold'] = i
             all_feature_shap.append(feature_shap)
             all_t_shap.append(t_shap)
 
