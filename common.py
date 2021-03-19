@@ -29,9 +29,8 @@ def load_data(all_fpath, n, f):
     """
     all_matrix =[]
     for fpath in all_fpath:
-        new_fpath = './data/'+fpath
-        assert os.path.exists(new_fpath), "File '"+new_fpath+"' not exist!" 
-        d=pd.read_csv(new_fpath, sep = '|', header = 0)
+        assert os.path.exists(fpath), "File '"+fpath+"' not exist!" 
+        d=pd.read_csv(fpath, sep = '|', header = 0)
         m, fnames = construct_feature_matrix(d, n, f)
         all_matrix.append(m)
     all_matrix=np.concatenate(all_matrix, axis = 0)
@@ -65,12 +64,9 @@ def five_fold_cv(gs_filepath, n, f, shap):
     yields
         
     """
-
-    #gs_filepath = './data/gs.file'
     gs_file = pd.read_csv(gs_filepath, header = None)
     f_path = gs_file[0].to_list()
     f_gs = gs_file[1].to_list()
-    #print(f_path, f_gs)
     kf = KFold(n_splits=5, random_state= 0, shuffle= True)
     out_eva = open('eva.tsv', 'w')
     out_eva.write("%s\t%s\t%s\n" %('fold', 'AUROC', 'AUPRC'))
@@ -80,11 +76,14 @@ def five_fold_cv(gs_filepath, n, f, shap):
         all_t_shap = []
     
     for i,(train_idx, test_idx) in enumerate(kf.split(f_path)):
+        print("Start fold "+str(i)+" in five-fold cross-validation ..")
         # load train
+        print("Load training data ...")
         train_f = [f_path[j] for j in train_idx]
         train_matrix, _ = load_data(train_f, n, f)
         train_gs = [f_gs[j] for j in train_idx]
         # train model
+        print("Start training ...")
         gbm = lightgbm_train(train_matrix, train_gs)
         
         os.makedirs('./models', exist_ok = True)
@@ -93,34 +92,35 @@ def five_fold_cv(gs_filepath, n, f, shap):
         pickle.dump(gbm, open(filename, 'wb'))
         
         # load test
+        print("Load test data ...")
         test_f = [f_path[j] for j in test_idx]
         test_matrix,f_names = load_data(test_f, n, f)
         test_gs = [f_gs[j] for j in test_idx]
         
+        # test model
+        print("Start evaludation ...")
         test_pred = gbm.predict(test_matrix)
 
         # evaluation
         the_auc, the_auprc = evaluation(test_gs, test_pred)
 
-        print(the_auc, the_auprc)
+        print("AUC:%.4f; AUPRC: %.4f" % (the_auc, the_auprc))
         out_eva.write("%d\t%.4f\t%.4f\n" %(i, the_auc, the_auprc))
 
         # SHAP
         if shap:
+            print("Start SHAP analysis ...")
             feature_shap, t_shap = shap_analysis(gbm, test_matrix, f_names)
             feature_shap['fold'] = i
             t_shap['fold'] = i
             all_feature_shap.append(feature_shap)
             all_t_shap.append(t_shap)
 
-
     out_eva.close()
 
     if shap:
         all_feature_shap = pd.concat(all_feature_shap)
-        #all_feature_shap.columns = all_feature_shap.columns.get_level_values(0)
         all_t_shap = pd.concat(all_t_shap)
-        #all_t_shap.columns = all_t_shap.columns.get_level_values(0)
         all_feature_shap.to_csv('shap_group_by_measurment.csv', index = False)
         all_t_shap.to_csv('shap_group_by_timeslot.csv', index = False)
 

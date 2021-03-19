@@ -25,7 +25,20 @@ def main():
 
     args = parser.parse_args()
     
-    
+    if args.gs_file_path is not None:
+        print('Gold-standard file path: '+args.gs_file_path)
+        if os.path.isfile(args.gs_file_path):
+            pass
+        else:
+            sys.exit("Gold standard file doesn't exist!")
+
+    if args.last_n_records is not None:
+        print('Use Last '+str(args.last_n_records)+' records for predicton.')
+    if len(args.extra_features) >0:
+        print('Use extra features: '+','.join(args.extra_features)+'.')
+    if args.shap == True:
+        print('Condect SHAP analysis after model training.')
+
     opts = vars(args)
     run(**opts)
 
