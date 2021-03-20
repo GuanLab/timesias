@@ -37,7 +37,7 @@ def main():
     if len(args.extra_features) >0:
         print('Use extra features: '+','.join(args.extra_features)+'.')
     if args.shap == True:
-        print('Condect SHAP analysis after model training.')
+        print('Perform SHAP analysis after model training.')
 
     opts = vars(args)
     run(**opts)

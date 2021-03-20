@@ -64,7 +64,7 @@ def construct_feature_matrix(data, t, f):
             j=0
             while (j<jmax):
                 if (math.isnan(data[i][j])):
-                    processed_data[i][j*2]=-3000  # if the feature at one timepoint is missing, set value to -3000
+                    processed_data[i][j*2]=val_rep  # if the feature at one timepoint is missing, set value to -3000
                     processed_data[i][j*2+1]=0  # data is missing or not
                 else:
                     #print(data.shape[0],i)
@@ -79,7 +79,7 @@ def construct_feature_matrix(data, t, f):
         """ selecg last t timepoints out of i
         """
         j = d.shape[1]
-        m=np.ones(t*j)*(-5000)  # array([-5000., -5000., -5000., ..., -5000., -5000., -5000.]) default value: -5000
+        m=np.ones(t*j)*(t_rep)  # array([-5000., -5000., -5000., ..., -5000., -5000., -5000.]) default value: -5000
         if (i>=t-1):   # if record is longer than t (16) time points, use features from the last t length 
             m[0:t*j]=d[(i+1-t):(i+1),:].flatten()
         else:  # if the record is shorter than t time points, the shorted timepoints are replaced with -5000
@@ -94,8 +94,8 @@ def construct_feature_matrix(data, t, f):
         return new_d,  x_std, x_mean
 
     def missing_portion(d):
-        m = np.ones(d.shape[1])*(-5000)
-        m[:] = np.sum(d[d ==-3000],axis=0)/(-3000.0)/float(d.shape[0]) 
+        m = np.ones(d.shape[1])*(t_rep)
+        m[:] = np.sum(d[d ==val_rep],axis=0)/(val_rep)/float(d.shape[0]) 
         return m
 
     def baseline(d):
@@ -105,7 +105,7 @@ def construct_feature_matrix(data, t, f):
             i=0
             val=np.nan
             while (i<d.shape[0]):
-                if (d[i][j]==-3000):
+                if (d[i][j]==val_rep):
                     pass
                 else:
                     if (math.isnan(val)):
@@ -122,6 +122,9 @@ def construct_feature_matrix(data, t, f):
         b = np.asarray(b)
         #b = np.reshape(b, (1, b.shape[0]))
         return b
+
+    val_rep = -3000 #missing value replacement
+    t_rep = -5000 #missing time point replacement
 
     f_names = data.columns
     
