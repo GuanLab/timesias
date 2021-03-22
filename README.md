@@ -1,5 +1,5 @@
-# Sepsis
-## Top-performing algorithm for DII National Data Science Challenge
+# Timesias
+Forcast outcomes from time-series history. This is the top-performing algorithm for [DII National Data Science Challenge](https://sbmi.uth.edu/news/story.htm?id=4a7fba5d-2bd9-402a-a3bb-a2f5d21d2fe3).
 
 ## Installation
 
