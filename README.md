@@ -28,19 +28,19 @@ For visualization:
 The example data in the data/ are randomly generated data for the demonstration of the algorithm.
 
 Two types of data is requied for model training and prediction:
-* `gs.file`: `.txt` file two columns. The first column is file name index. The second column is the gold standard (0/1), representing the final outbreak of sepsis
+* `gs.file`: `.txt` file two columns. The first column is paths for time-series records. The second column is the gold standard (0/1), representing the final outbreak of sepsis
 
 ``` 
-0.psv,1
-1.psv,1
-2.psv,0
-3.psv,1
-4.psv,0
-5.psv,1
-6.psv,1
+./data/0.psv,1
+./data/1.psv,1
+./data/2.psv,0
+./data/3.psv,1
+./data/4.psv,0
+./data/5.psv,1
+./data/6.psv,1
 ``` 
 
-* `*.psv`: `.psv` table files separated by `|`, which is the time-series feature records.
+* `*.psv`: `.psv` table files separated by `|`, which are the time-series records.
 	The header of psv file are the feature names. To note, the first column is the time index.
 
 ``` 
