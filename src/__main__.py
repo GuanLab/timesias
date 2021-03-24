@@ -1,5 +1,5 @@
 import sys, os, argparse, textwrap
-from common import *
+from .common import *
 
 def main():
     parser = argparse.ArgumentParser(description = 'Predict outcomes from time-series data',

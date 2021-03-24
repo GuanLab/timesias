@@ -5,11 +5,11 @@ import pickle
 from sklearn.model_selection import KFold
 from sklearn.metrics import precision_recall_curve
 import sklearn.metrics as metrics
-from model import lightgbm_train
 from glob import glob
-from utils import *
 import shap
 from collections import defaultdict
+from .utils import *
+from .model import lightgbm_train
 
 
 def load_data(all_fpath, n, f):
@@ -68,7 +68,8 @@ def five_fold_cv(gs_filepath, n, f, shap):
     f_path = gs_file[0].to_list()
     f_gs = gs_file[1].to_list()
     kf = KFold(n_splits=5, random_state= 0, shuffle= True)
-    out_eva = open('eva.tsv', 'w')
+    os.makedirs('./results', exist_ok = True)
+    out_eva = open('./results/eva.tsv', 'w')
     out_eva.write("%s\t%s\t%s\n" %('fold', 'AUROC', 'AUPRC'))
     
     if shap:
@@ -88,7 +89,7 @@ def five_fold_cv(gs_filepath, n, f, shap):
         
         os.makedirs('./models', exist_ok = True)
         filename = './models/finalized_model.sav.'+str(i)
-        print('Saving model to '+ filename+ '...') # save model to file
+        print('Saving model to '+ filename+ ' ...') # save model to file
         pickle.dump(gbm, open(filename, 'wb'))
         
         # load test
@@ -121,8 +122,8 @@ def five_fold_cv(gs_filepath, n, f, shap):
     if shap:
         all_feature_shap = pd.concat(all_feature_shap)
         all_t_shap = pd.concat(all_t_shap)
-        all_feature_shap.to_csv('shap_group_by_measurment.csv', index = False)
-        all_t_shap.to_csv('shap_group_by_timeslot.csv', index = False)
+        all_feature_shap.to_csv('./results/shap_group_by_measurment.csv', index = False)
+        all_t_shap.to_csv('./results/shap_group_by_timeslot.csv', index = False)
 
 
 def specific_evaluation(gs_filepath, n, f):
@@ -158,8 +159,9 @@ def specific_evaluation(gs_filepath, n, f):
         # SHAP analysis
         feature_shap, t_shap = shap_analysis(gbm, test_matrix, f_names)
     
-    feature_shap.to_csv('shap_group_by_measurment.csv', index= False)
-    t_shap.to_csv('shap_group_by_timeslot.csv', index = False)
+    os.makedirs('./new_results', exist_ok = True)
+    feature_shap.to_csv('./new_results/shap_group_by_measurment.csv', index= False)
+    t_shap.to_csv('./new_results/shap_group_by_timeslot.csv', index = False)
 
 
 def shap_analysis(regressor, Test_X, f_names):
@@ -252,17 +254,4 @@ def plot_shap(feature_shap = None, t_shap = None):
     
     p = column(p1,p2)
     show(p)
-
-plot_shap()
-
-
-
-
-
-
-
-
-
-
-
 

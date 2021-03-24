@@ -1,0 +1,3 @@
+[console_scripts]
+timesias = src.__main__:main
+

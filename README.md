@@ -2,8 +2,12 @@
 Forcast outcomes from time-series history. This is the top-performing algorithm for [DII National Data Science Challenge](https://sbmi.uth.edu/news/story.htm?id=4a7fba5d-2bd9-402a-a3bb-a2f5d21d2fe3).
 
 ## Installation
+Install this package via pip:
+``` r
+pip install timesias==0.0.1
+```
+or clone this program to your local directory: 
 
-Clone this program to your local directory: 
 ``` r
 git clone https://github.com/GuanLab/sepsis.git
 ```
@@ -47,7 +51,7 @@ HR|feature_1|feature_2|...|feature_n-1|feature_n
 ```
 ## Model training and cross validation
 ``` r
-python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES] --shap
+timesias -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES] --shap
 ```
 
 * `GS_FILE_PATH`: the path to the gold-standard file; for example, `/data/gs.file`;
@@ -57,7 +61,7 @@ python main.py -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES] --shap
 also use
 
 ```r
- python main.py --help
+ timesias --help
 ```
 to get instructions on the usage of our program.
 
