@@ -4,7 +4,7 @@ Forcast outcomes from time-series history. This is the top-performing algorithm 
 ## Installation
 Install this package via pip:
 ``` r
-pip install timesias==0.0.1
+pip install timesias
 ```
 or clone this program to your local directory: 
 
@@ -68,18 +68,20 @@ to get instructions on the usage of our program.
 
 This will generate models, which will be saved under a new directory `./models`.
 
-Evaluation results during five-fold cross validation will be stored in `eva.tsv`.
+This will also create a new folder `./results`, where results mentioned below will be stored.
+
+Evaluation results during five-fold cross validation will be stored in `./results/eva.tsv`.
 
 
 # Top feature evaluation
 
-if `--shap` is indicated, SHAP analysis will be carried out to show top contributing measurements and last nth time points. This will generate an html report (`top_feature_report.html`) like the following:
+if `--shap` is indicated, SHAP analysis will be carried out to show top contributing measurements and last nth time points. This will generate an html report (`./results/top_feature_report.html`) like the following:
 
 <p align="center">
 <img width="800", src ="https://github.com/GuanLab/sepsis/blob/master/top_feature_report_example.png">
 </p>
 
-The corresponding shap values will be stored in `shap_group_by_measurment.csv` and `shap_group_by_timeslot.csv`.
+The corresponding shap values will be stored in `./results/shap_group_by_measurment.csv` and `./results/shap_group_by_timeslot.csv`.
 
 ## Other applications of this method
 
