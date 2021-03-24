@@ -9,7 +9,7 @@ pip install timesias==0.0.1
 or clone this program to your local directory: 
 
 ``` r
-git clone https://github.com/GuanLab/sepsis.git
+git clone https://github.com/GuanLab/timesias.git
 ```
 ## Dependency
 
