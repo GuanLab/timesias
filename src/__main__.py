@@ -13,7 +13,7 @@ def main():
             default =  16)
 
     parser.add_argument('-f','--extra_features', type=str,
-            nargs = '+',
+            nargs = '*',
             default = ['norm', 'std', 'missing_portion', 'baseline'],
             help = '''
             Which extra features to use.
