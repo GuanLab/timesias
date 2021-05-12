@@ -13,7 +13,7 @@ git clone https://github.com/GuanLab/timesias.git
 ```
 ## Dependency
 
-* [python (3.7.4)](https://www.python.org/)
+* [python (>3.6)](https://www.python.org/)
 * [numpy (1.17.2)](https://numpy.org/)
 * [pandas (0.25.1)](https://pandas.pydata.org/)
 * [LightGBM (3.1.1)](https://pypi.org/project/lightgbm/)
@@ -51,14 +51,15 @@ HR|feature_1|feature_2|...|feature_n-1|feature_n
 ```
 ## Model training and cross validation
 ``` r
-timesias -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES] --shap
+timesias -g [GS_FILE_PATH] -t [LAST_N_RECORDS] -f [EXTRA_FEATURES] -e [EVA_METRICS] --shap
 ```
 
 * `GS_FILE_PATH`: the path to the gold-standard file; for example, `/data/gs.file`;
 * `LAST_N_RECORDS`: last n records to use for prediction. default: 16;
 * `EXTRA_FEATURES`: addtional features used for prediction. default: ['norm', 'std', 'missing_portion', 'baseline'], which are all features we used in DII Data challenge.
+* `EVA_METRICS`: evaluation metrics to use. Available choices: auroc auprc cindex pearsonr spearmanr. For binary classification, `AUROC` and `AUPRC` are recommended; for regression, we recommend: `C-index`, `Pearsonr` and `Spearmanr`. default: AUROC AUPRC
 
-also use
+also use:
 
 ```r
  timesias --help
@@ -66,12 +67,13 @@ also use
 to get instructions on the usage of our program.
 
 
-This will generate models, which will be saved under a new directory `./models`.
+The above one-line command will yield the following results automatically:
 
-This will also create a new folder `./results`, where results mentioned below will be stored.
+1. `./models`.: where all hyperparameters of trained models will be saved.
 
-Evaluation results during five-fold cross validation will be stored in `./results/eva.tsv`.
-
+2. `./results`: where all results mentioned below will be stored:
+	1. `eva.tsv`: Evaluation results during five-fold cross validation.
+	2. all results from top feature evaluations if  `--shap` is used. the details will be mentioned in the next section.
 
 # Top feature evaluation
 
