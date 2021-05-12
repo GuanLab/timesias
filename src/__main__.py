@@ -6,7 +6,7 @@ def main():
             usage = 'use "python %(prog)s --help" for more information',
             formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('-g','--gs_file_path', type=str,
-            help = 'path to the gold-standard file, for example, ./data/gs.file')
+            help = 'path to the gold-standard file, for example, ./data/example.gs.file')
 
     parser.add_argument('-t','--last_n_records', type=int,
             help = 'Use last n records. default: 16',
@@ -19,6 +19,17 @@ def main():
             Which extra features to use.
             default: ['norm', 'std', 'missing_portion', 'baseline']
             ''')
+    parser.add_argument('-e', '--eva_metrics', type = str,
+            nargs = '+',
+            default = ['AUROC', 'AUPRC'],
+            help = '''
+            Evaluation metrics to use:
+            available choices: auroc auprc cindex pearsonr spearmanr
+            for binary classification, we recommend: AUROC,AUPRC
+            for regression, we recommend: C-index, Pearsonr, Spearmanr
+            default: AUROC AUPRC
+            '''
+            )
     parser.add_argument('--shap',
             action = 'store_true',
             help = 'Conduct shap analysis on the test set')
@@ -36,6 +47,12 @@ def main():
         print('Use Last '+str(args.last_n_records)+' records for predicton.')
     if len(args.extra_features) >0:
         print('Use extra features: '+','.join(args.extra_features)+'.')
+    
+    if all(i in ['AUROC', 'AUPRC', 'Pearsonr', 'Spearmanr', 'C-index'] for i in args.eva_metrics):
+        print('Use evaluation metrics:', args.eva_metrics)
+    else:
+        sys.exist('Error: please select evaluation metrics from the following: auroc, auprc, pearsonr, spearmanr, cindex')
+    
     if args.shap == True:
         print('Perform SHAP analysis after model training.')
 
@@ -43,8 +60,8 @@ def main():
     run(**opts)
 
 
-def run(gs_file_path, last_n_records, extra_features, shap):
-    five_fold_cv(gs_file_path, last_n_records, extra_features, shap)
+def run(gs_file_path, last_n_records, extra_features, eva_metrics, shap):
+    five_fold_cv(gs_file_path, last_n_records, extra_features, eva_metrics, shap)
     #specific_evaluation(gs_file_path, last_n_records, extra_features)
 
 if __name__ == '__main__':

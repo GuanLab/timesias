@@ -3,11 +3,10 @@ import pandas as pd
 import os
 import pickle
 from sklearn.model_selection import KFold
-from sklearn.metrics import precision_recall_curve
-import sklearn.metrics as metrics
 from glob import glob
 import shap
 from collections import defaultdict
+from .statistics import *
 from .utils import *
 from .model import lightgbm_train
 
@@ -36,31 +35,38 @@ def load_data(all_fpath, n, f):
     all_matrix=np.concatenate(all_matrix, axis = 0)
     return all_matrix, fnames
 
-def evaluation(gs,pred):
+def evaluation(eva_metrics,gs,pred):
     """
     params
-        gs
-        pred
+        eva_metrics: list
+        gs:
+        pred: 
     
     yields
-        the_auc
-        the_auprc
+        a float
     """
-    #auc
-    fpr, tpr, thresholds = metrics.roc_curve(gs, pred, pos_label=1)
-    the_auc=metrics.auc(fpr, tpr)
-    #aurpc
-    precision, recall, thresholds = precision_recall_curve(gs, pred)
-    the_auprc = metrics.auc(recall, precision)
+    for eva in eva_metrics:
+        if eva == 'AUROC':
+            yield compute_auroc(pred, gs)
+        elif eva == 'AUPRC':
+            yield compute_auprc(pred, gs)
+        elif eva == 'C-index':
+            yield c_index(pred, gs)
+        elif eva == 'Pearsonr':
+            yield pearsonr_cor(pred, gs)
+        elif eva == 'Spearmanr':
+            yield spearmanr_cor(pred, gs)
+        else:
+            sys.exit("Unknown evaluation metric: "+eva)
 
-    return the_auc, the_auprc
-
-def five_fold_cv(gs_filepath, n, f, shap):
+def five_fold_cv(gs_filepath, n, f, eva_metrics, shap):
     """
     params
-        gs_filepath
-        n
-        f
+        gs_filepath: str
+        n: int
+        f: list of strings
+        eva_metrics: list of strings
+        shap: boolean
     yields
         
     """
@@ -70,7 +76,7 @@ def five_fold_cv(gs_filepath, n, f, shap):
     kf = KFold(n_splits=5, random_state= 0, shuffle= True)
     os.makedirs('./results', exist_ok = True)
     out_eva = open('./results/eva.tsv', 'w')
-    out_eva.write("%s\t%s\t%s\n" %('fold', 'AUROC', 'AUPRC'))
+    out_eva.write("%s\t%s\n" %('fold', ('\t').join(eva_metrics)))
     
     if shap:
         all_feature_shap = []
@@ -103,10 +109,11 @@ def five_fold_cv(gs_filepath, n, f, shap):
         test_pred = gbm.predict(test_matrix)
 
         # evaluation
-        the_auc, the_auprc = evaluation(test_gs, test_pred)
+        all_eva = [j for j in evaluation(eva_metrics, test_gs, test_pred)]
+        for idx, e in enumerate(eva_metrics):
+            print(e+':', all_eva[idx])
 
-        print("AUC:%.4f; AUPRC: %.4f" % (the_auc, the_auprc))
-        out_eva.write("%d\t%.4f\t%.4f\n" %(i, the_auc, the_auprc))
+        out_eva.write("%d\t%s\n" %(i, ('\t').join(["%.4f" % j for j in all_eva])))
 
         # SHAP
         if shap:
