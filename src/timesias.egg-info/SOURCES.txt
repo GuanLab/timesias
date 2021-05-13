@@ -7,4 +7,5 @@ src/timesias.egg-info/PKG-INFO
 src/timesias.egg-info/SOURCES.txt
 src/timesias.egg-info/dependency_links.txt
 src/timesias.egg-info/entry_points.txt
+src/timesias.egg-info/requires.txt
 src/timesias.egg-info/top_level.txt

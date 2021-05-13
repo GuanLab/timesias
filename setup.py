@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="timesias",
-    version="0.0.1",
+    version="0.0.4",
     author="Hanrui Zhang, Yuanfang Guan",
     author_email="rayezh@umich.edu, gyuanfan@umich.edu",
     description="A machine-learning framework for predicting outcomes from time-series history.",
@@ -27,4 +27,11 @@ setuptools.setup(
             ]
         },
     python_requires=">=3.6",
+    install_requires = [
+        'numpy >=1.14.1',
+        'scikit-learn >=0.24.1',
+        'lightgbm >=3.1.1',
+        'shap ==0.35.0',
+        'bokeh >=2.3.0'
+    ]
 )

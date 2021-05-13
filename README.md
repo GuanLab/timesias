@@ -13,15 +13,14 @@ git clone https://github.com/GuanLab/timesias.git
 ```
 ## Dependency
 
-* [python (>3.6)](https://www.python.org/)
-* [numpy (1.17.2)](https://numpy.org/)
-* [pandas (0.25.1)](https://pandas.pydata.org/)
-* [LightGBM (3.1.1)](https://pypi.org/project/lightgbm/)
-* [scikit-learn (0.19.0)](https://scikit-learn.org/stable/) 
-* [shap (0.38.1)](https://pypi.org/project/shap/)
+* [python (>=3.6)](https://www.python.org/)
+* [numpy (>=1.14.1)](https://numpy.org/)
+* [LightGBM (>=3.1.1)](https://pypi.org/project/lightgbm/)
+* [scikit-learn (>=0.19.0)](https://scikit-learn.org/stable/) 
+* [shap (0.35.0)](https://pypi.org/project/shap/)
 
 For visualization:
-* [boken (2.3.0)](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html)
+* [boken (>=2.3.0)](https://docs.bokeh.org/en/latest/docs/first_steps/installation.html)
 
 ## Input data format
 
