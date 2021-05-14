@@ -27,7 +27,7 @@ For visualization:
 The example data in the data/ are randomly generated data for the demonstration of the algorithm.
 
 Two types of data is requied for model training and prediction:
-* `gs.file`: gold standard file with two columns. The first column is paths for time-series records. The second column is the gold standard (0/1), representing the final outbreak of sepsis
+* `example.gs.file`: gold standard file with two columns. The first column is paths for time-series records. The second column is the gold standard (0/1), representing the final outbreak of sepsis:
 
 ``` 
 ./data/0.psv,1
@@ -40,7 +40,7 @@ Two types of data is requied for model training and prediction:
 ``` 
 
 * `*.psv`: time series record files. `.psv` table files separated by `|`, which are the time-series records.
-	The header of psv file are the feature names. To note, the first column is the time index.
+	The header of psv file are the feature names. To note, the first column is the time index:
 
 ``` 
 HR|feature_1|feature_2|...|feature_n-1|feature_n
