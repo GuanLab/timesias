@@ -89,5 +89,5 @@ The corresponding shap values will be stored in `./results/shap_group_by_measurm
 This method can be generalized to be used on other hospitalization data. One application of this method is the [COVID-19 DREAM Challenge](https://www.synapse.org/#!Synapse:syn21849255/wiki/602411), where this method also achieves top performance.
 
 ## Reference
-* For citation, please refer to our latest iScience paper: [Assessment of the timeliness and robustness for predicting adult sepsis](https://www.sciencedirect.com/science/article/pii/S2589004221000742).
-* For protocol(TBD)
+* For original paper, please refer to our latest iScience paper: [Assessment of the timeliness and robustness for predicting adult sepsis](https://www.sciencedirect.com/science/article/pii/S2589004221000742).
+* For method and usage of Timesias, please refer to our STAR protocol:[Timesias: A machine learning pipeline for predicting outcomes from time-series clinical records](https://www.sciencedirect.com/science/article/pii/S2666166721003464?via%3Dihub).
